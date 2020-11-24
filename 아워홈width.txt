@@ -2,37 +2,14 @@ gnb-wrap : max-width: 1200px
 ourhome-businnes-wrap : max-width: 1200px
 ourhome-news: max-width: 1300px
 
-font-family:'Noto Sans KR',sans-serif
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-
-mainColor-1:#ef7c00
-mainColor-2:#9d3248
-
-fontColor-1:#4e4e4e(연한글씨)
-fontColor-2:#000000(진한글씨)
-fontColor-3:#696969
-
-footerColor-1:#929490(링크)
-footerColor-2:#3da2d0(강조)
-footerColor-3:#989d99(input)
-footerColor-4:#494949
-footerBg:#121212
-
-
-sidegnb:#696969
-btntop:#4b4b4b
-
-
 
 sidemenu(6장이상)
-1.재무정보 하이라이트
-2.FAQ 
-3.Cooking Meal 사업
-4.오시는길 ㅇ
-5.온라인상담
-6.아워홈소식
-7.아워홈소개 o
+1.아워홈소개 
+2.아워홈비즈니스 
+3.Cooking Meal 사업 
+4.온라인상담 
+5.오시는길 
+6.아워홈소식 
 
 
 
