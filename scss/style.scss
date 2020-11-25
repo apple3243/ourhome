@@ -1,9 +1,99 @@
 @charset "utf-8";
+@import url("http://applecloud.dothome.co.kr/HTML/style/CSS/reset.css");
 @import "design";
-body{font:14px/1.5 'Noto Sans KR' MalgunGothic '맑은고딕', arial,sans-serif};
-#header{position: fixed;top: 0;left: 0;}
+@import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
+body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif};
+#header{
+    position: absolute;top: 0;z-index: 3;width: 100%;padding: 25px 0 10px 0;
+    .header-inner-wrap{
+        width: $baseWidth;margin:0 auto;overflow: hidden;height: 100%;height: 50px;
+        h1.logo{width: 115px;height: 50px;float: left;margin-right: 50px;}
+        .gnb{float: left;top: 0;height: 100%;}
+        .util-menu{
+            float:right;
+            select{
+                font-size: 15px;
+                font-family: 'Noto Sans KR';
+                border-radius:10px;
+                border-color: #fff;
+                color: #fff;
+                background: transparent;
+                position: relative;
+                top: 14px;
+                option{
+                    background-color: rgba(0,0,0,.6);
+                }
+            }
+        }
+    }
+}
+#gnb{
+    >ul{color:#fff;position: relative;top: 12px;height: 100%;
+        &:after{content: '';display: block;clear: both;}
+        >li{
+            float: left;margin-right:67px;font-size: 16.5px;position: relative;
+            &.gnb-list-3{margin-right: 59px;}
+            &.gnb-list-4{padding-right: 12px;margin-right: 0;}
+            &.gnb-list-5{
+                padding-left: 12px;position: relative;margin-right: 28px;
+                &:before{content: '';display: inline-block;width: 2px;height: 16px;background-color: #fff;position: absolute;top: 5px;left: 0;}
+            }
+            &.gnb-list-6{
+                padding-right: 18px;margin-right: 0;
+            }
+            &.gnb-list-7{
+                padding-left: 18px;position: relative;
+                &:before{content: '';display: inline-block;width: 2px;height: 16px;background-color: #fff;position: absolute;top: 5px;left: 0;}
+                img{width: 148px;height: auto;}
+            }
+            >a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                transition: all .2s ease-in;
+                &:after{content: '';
+                    width: 100%;
+                    height: 7px;
+                    background-color: #993333;
+                    position: absolute;
+                    left: 50%;
+                    top: 66px;
+                    transform: translateX(-50%);
+                    transition: all .5s ease-in;
+                }
+                &.on{
+                    &:after{width: 60px;}
+                    }
+            }
+            >ul{
+                position: absolute;
+                width: 100%;
+                background-color: #ccc;
+                height: 320px;
+                left: 0;
+                overflow: hidden;
+                display: none;
+                top: 85px;
+                >li{
+                    >a{
+                        display: inline-block;
+                        height: 100%;
+                        width: 100%;
+                        padding: 8px;
+                        color: $fontColor-2;
+                        position: relative;
+                        z-index: 2;
+                        transition: color 0.8s ease-in;
+                    }
+                }
+            }
+        }   
+    }
+}
 .swiper-container {
     width: 100%;
     height: 100%;
     img{width: 100%;height: auto;}
 }
+.upper-text,.below-text{position: absolute;bottom: 0;z-index: 3;}
