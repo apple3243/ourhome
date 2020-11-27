@@ -1,14 +1,14 @@
 function gnbFnc(el) {
-    var menu1 = el.find('>li>a')
-    var subMenu1 = el.find('ul')
+    var menu1 = el.find('ul>li>a')
+    var subMenu1 = el.find('ul>li>ul')
     var headerWrap = el.closest('header')
     var headerBg = $('<div class="header-bg"></div>').css({
         'position': 'absolute',
         'left': '0',
         'top': '85px',
-        'background-color': '#ccc',
+        'background-color': '#e5e5e5',
         'width': '100%',
-        'height': '320px',
+        'height': '360px',
         'display': 'none',
         'box-shadow': '0 5px 5px rgba(0,0,0,0.1)'
     })
