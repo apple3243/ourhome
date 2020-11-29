@@ -134,7 +134,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
                 display: none;
                 position: absolute;
                 width: 140px;
-                background-color: #e5e5e5;
+                background-color: #fff;
                 height: 360px;
                 left: 50%;
                 overflow: hidden;
@@ -219,6 +219,11 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
 .swiper-pagination-bullet{
     width: 23px;height: 23px;background-color: #fff;
 }
+
+.lSSlideOuter .lSPager.lSGallery li img{border: 1px solid #ccc;}
+.lSSlideOuter .lSPager.lSGallery li.active{
+    img{border: 2px solid $mainColor-1;}
+};
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{bottom: 10px;}
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin: 0 10px;}
 .section.s1{
@@ -360,7 +365,9 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
     }
 }
 .section.s4{
-    max-width: 1300px;margin:0 auto;overflow: hidden;color:$fontColor-1;
+    .inner-section-4{
+        max-width: 1300px;margin:0 auto;overflow: hidden;color:$fontColor-1;
+    }
     p.tit-2{margin-bottom: 35px;color: $fontColor-2;}
     .news-box-1{
         width: 48%;
@@ -369,7 +376,10 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
         border: 2px solid #ccc;
         border-radius: 16px;
         padding: 87px 60px;
+        text-align: center;
+        position: relative;
         img{width: 80%;}
+        p{padding: 11px;font-size: 17px;}
     }
     .news-box-2,.news-box-3{
         width: 50%;
@@ -378,7 +388,6 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
         border-radius: 16px;
         overflow: hidden;
         padding: 25px;
-        height: 28.2%;
         .tit-3{font-size: 16px;padding-bottom: 30px;}
         
     }
@@ -386,23 +395,39 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
         margin-bottom: 20px;
         .inner-box-2-left{
             float: left;
-            width: 48%;
+            width: 61%;
             position: relative;
             margin-right: 20px;
+            ul{
+                font-weight: 300;line-height: 1.8;
+                li{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 99%;}
+            }
+            
         }
         .inner-box-2-right{
             float: right;
-            width: 48%;
+            width: 35%;
             position: relative;
             img{width: 100%;height: 164px;}
+            .go{display: block;width: 10px;height: 10px;border-right: 1px solid $fontColor-1 ;border-top: 1px solid $fontColor-1;transform: rotate(45deg);top: 7px;right: 0;position: absolute;}
         }
     }
     .news-box-3{
+        height: 257px;
         .inner-box-3-left{
             float: left;
             width: 48%;
             position: relative;
             margin-right: 20px;
+            ul{
+                li{
+                    font-weight: 300;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 95%;
+                    text-overflow: ellipsis;
+                }
+            }
         }
         .inner-box-3-right{
             float: right;
@@ -410,10 +435,10 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
             position: relative;
             margin: 0 auto;
             text-align: center;
-            .tit-3{padding-bottom: 20px;}
+            .tit-3{padding-bottom: 20px;text-align: left;}
             >img{width: 100px;height: 100px;margin-bottom: 10px;}
             p{
-                padding-right: 94px;text-align: left;
+                padding-right: 94px;text-align: left;font-weight: 300;
             }
             .btn-icon-box{
                 ul{
@@ -428,8 +453,73 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
             }
         }
     }
-    .plus,.go{position: absolute;right: 0;top: -8px;font-size: 22px;}
-    
+    .plus{position: absolute;right: 0;top: -11px;font-size: 29px;font-weight: 100;}
+    .btn-top{
+        position: absolute;
+        right: 20px;
+        bottom:50px;
+        width: 30px;
+        height: 30px;
+        background-color:#4b4b4b;
+        border-radius:50px;
+        span{
+            position: relative;left: 34%;top: 42%;display: block;height: 10px;width: 10px;border-top: 1px solid #fff;border-left: 1px solid #fff;transform: rotate(45deg);
+        }
+    }
+}
+.section.s5{
+    background-color: #121212;height: 165px;
+    footer{
+        width: 1068px;
+        margin: 0 auto;
+        padding: 35px 0;
+        .upper-footer{
+            overflow: hidden;margin-bottom: 40px;
+            .upper-left-footer{
+                float: left;
+                color: #929490;
+                font-size: 13px;
+                ul{
+                    overflow: hidden;
+                    li{
+                        float: left;position: relative;
+                        ~li{
+                            &:before{content: "";height: 14px;width: 2px;background-color: #929490;position: absolute;left: 0;top: 4px;}
+                            padding-left:10px;
+                            margin-left: 10px;
+                            &:nth-of-type(2){color: #3da2d0;}
+                        }
+                    }
+                }
+            }
+            .upper-right-footer{
+                float: right;
+                ul{
+                    overflow: hidden;float: left;
+                    li{
+                        float: left;
+                        ~li{margin-left: 30px;}
+                    }
+                }
+                select{
+                    margin-left: 50px;
+                    width:250px;
+                    height: 37px;
+                    background-color: #000;
+                    margin-right: 10px;
+                    border: 1px solid #fff;
+                    font-size: 15px;
+                    color: #9b9d99;
+                    padding-left: 5px;
+                }
+                button{width: 43px;height: 36px;border: 1px solid #fff;background-color: #000;color: #9b9d99;float: right;}
+            }
+        }
+        .below-footer{
+            font-size: 15px;
+            color: #494949;
+        }
+    }
 }
 @keyframes rotating {
     from {

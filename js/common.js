@@ -6,7 +6,7 @@ function gnbFnc(el) {
         'position': 'absolute',
         'left': '0',
         'top': '85px',
-        'background-color': '#e5e5e5',
+        'background-color': '#fff',
         'width': '100%',
         'height': '360px',
         'display': 'none',
@@ -78,7 +78,11 @@ $(document).ready(function() {
         vThumbWidth:80,
         thumbItem:4,
         thumbMargin:20,
-        slideMargin:0
+        slideMargin:0,
+        auto:true,
+        speed:500,
+        pauseOnHover:true,
+        controls:false,
     }); 
   });
 
