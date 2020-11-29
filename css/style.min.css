@@ -336,6 +336,10 @@ body {
   background-color: #fff;
 }
 
+#fp-nav ul li .fp-tooltip {
+  text-decoration: underline;
+}
+
 .lSSlideOuter .lSPager.lSGallery li img {
   border: 1px solid #ccc;
 }
@@ -810,5 +814,23 @@ body {
   to {
     -webkit-transform: rotate(359deg);
             transform: rotate(359deg);
+  }
+}
+
+@media (max-width: 1099px) {
+  #fp-nav.fp-right {
+    right: 40%;
+    top: 38px;
+  }
+  #fp-nav ul li {
+    display: inline-block;
+  }
+  #fp-nav ul li a span {
+    color: #fff;
+    background-color: #fff;
+  }
+  .fp-slidesNav ul li a span {
+    background-color: #fff;
+    color: #fff;
   }
 }

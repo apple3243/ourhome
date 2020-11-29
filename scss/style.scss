@@ -219,7 +219,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
 .swiper-pagination-bullet{
     width: 23px;height: 23px;background-color: #fff;
 }
-
+#fp-nav ul li .fp-tooltip{text-decoration: underline;}
 .lSSlideOuter .lSPager.lSGallery li img{border: 1px solid #ccc;}
 .lSSlideOuter .lSPager.lSGallery li.active{
     img{border: 2px solid $mainColor-1;}
@@ -529,3 +529,24 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
       transform: rotate(359deg);
     }
   }
+// tablet&mobile
+@media(max-width:1099px){
+    #fp-nav{
+        &.fp-right{right: 40%;top: 38px;}
+        ul{
+            li{
+                display:inline-block;
+                a{
+                    span{color: #fff;background-color: #fff;}
+                }
+            }
+        }
+    }
+    .fp-slidesNav ul li a span{background-color: #fff;color: #fff;}
+}
+//tablet
+@media(min-width:721px) and (max-width:1099px){
+}
+// Mobile
+@media(max-width:720px){
+}
