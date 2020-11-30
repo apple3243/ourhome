@@ -36,20 +36,6 @@ function gnbFnc(el) {
     })
 
 }
-// function allMenuFnc(el) {
-//     el.on('click', function (e) {
-//         if ($('html').hasClass('mobile')) {
-//             $('.gnb-wrap').addClass('on')
-//         } else {
-//             $(this).toggleClass('on')
-//         }
-//         e.preventDefault();
-//     });
-//     $('.mobile-btn-close').on('click', function (e) {
-//         e.preventDefault();
-//         $('.gnb-wrap').removeClass('on')
-//     })
-// }
 function deviceSizeChkFnc() {
     $(window).on('resize', function () {
         var w = $(this).innerWidth()
@@ -57,38 +43,60 @@ function deviceSizeChkFnc() {
         // mobile: 751이상 1095이하
         // small-mobile:750이하
         $('html').attr('class', '')
-        if (w >= 1096) {
+        if (w >= 1100) {
             $('html').addClass('pc')
-        } else if (w >= 751) {
-            $('html').addClass('mobile')
-        } else {
-            $('html').addClass('small mobile')
-
+        } else /* if (w >= 722) */ {
+            $('html').addClass('tablet')
         }
+        // } else {
+        //     $('html').addClass('mobile')
+
+        // }
     });
     $(window).trigger('resize')
 }
+function listadded() {
+    if ($('html').hasClass('tablet')) {
+        $('#gnb ul li').eq(3).insertBefore($("#gnb ul li").eq(0))
+    }
+}
 
-$(document).ready(function() {
+function allMenuFnc(el) {
+    el.on('click', function (e) {
+        if ($('html').hasClass('tablet')) {
+            $('.all-menu').addClass('on')
+        } else {
+            $(this).toggleClass('on')
+        }
+        e.preventDefault();
+    });
+    $('.btn-close').on('click', function (e) {
+        e.preventDefault();
+        $('.all-menu').removeClass('on')
+    })
+}
+
+$(document).ready(function () {
     $("#lightSlider").lightSlider({
-        gallery:true,
-        item:1,
-        vertical:true,
-        verticalHeight:370,
-        vThumbWidth:80,
-        thumbItem:4,
-        thumbMargin:20,
-        slideMargin:0,
-        auto:true,
-        speed:500,
-        pauseOnHover:true,
-        controls:false,
-    }); 
-  });
+        gallery: true,
+        item: 1,
+        vertical: true,
+        verticalHeight: 370,
+        vThumbWidth: 80,
+        thumbItem: 4,
+        thumbMargin: 20,
+        slideMargin: 0,
+        auto: true,
+        speed: 500,
+        pauseOnHover: true,
+        controls: false,
+    });
+});
 
 
 $(function () {
     deviceSizeChkFnc();
     gnbFnc($('#gnb'))
-    // allMenuFnc($('.btn-allmenu'))
+    allMenuFnc($('.all-menu'))
+    listadded();
 })

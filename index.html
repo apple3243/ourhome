@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="shortcut icon" href="img/common/ourhome.ico" type="image/x-icon">
-    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
     <link rel="stylesheet" href="css/style.min.css">
 
 </head>
@@ -26,6 +26,9 @@
     <header id="header">
         <div class="header-inner-wrap">
             <h1 class="logo"><a href="index.html"><img src="img/common/img-logo.png" alt="아워홈 메인"></a></h1>
+            <div class="all-menu">
+                <span></span>
+            </div>
             <div id="gnb" class="gnb">
                 <ul>
                     <li class="gnb-list-1"><a href="about.html">About 아워홈</a>
@@ -86,6 +89,9 @@
                     <option value="CHINESE">CHN</option>
                 </select>
             </div>
+            <div class="btn-close">
+            </div>
+            <div class="dim"></div>
         </div>
     </header>
     <div id="full-page">
@@ -135,50 +141,80 @@
             <h2 class="tit-1">아워홈 비즈니스</h2>
             <p class="tit-2">아워홈은 언제나 건강한 맛과 서비스로 고객의 일상과 함께 합니다.</p>
             <div class="business-box">
-                <ul>
+                <ul class="imglist-ul">
                     <li>
                         <a href="#">
-                            <img src="img/main/img-business1.png" alt="#">
+                            <div class="screen">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <img src="img/main/img-business1.png" alt="#">
+                            </div>
+                            <h3>Cooking Meal사업</h3>
+                            <p>하루 100만 명
+                                고객의 건강을 책임지는
+                                대한민국 No.1</p>
                         </a>
-                        <h3>Cooking Meal사업</h3>
-                        <p>하루 100만 명
-                            고객의 건강을 책임지는
-                            대한민국 No.1</p>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/main/img-business2.png" alt="#">
+                            <div class="screen">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <img src="img/main/img-business2.png" alt="#">
+                            </div>
+                            <h3>식품사업</h3>
+                            <p>127명 전문 셰프의
+                                노하우를 담은
+                                200여 가지 다양한 상품</p>
                         </a>
-                        <h3>식품사업</h3>
-                        <p>127명 전문 셰프의
-                            노하우를 담은
-                            200여 가지 다양한 상품</p>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/main/img-business3.png" alt="#">
+                            <div class="screen">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <img src="img/main/img-business3.png" alt="#">
+                            </div>
+                            <h3>Restaurant사업</h3>
+                            <p>차별화된 콘셉트와 프리미엄
+                                서비스의 Hospitality Leader</p>
                         </a>
-                        <h3>Restaurant사업</h3>
-                        <p>차별화된 콘셉트와 프리미엄
-                            서비스의 Hospitality Leader</p>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/main/img-business4.png" alt="#">
+                            <div class="screen">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <img src="img/main/img-business4.png" alt="#">
+                            </div>
+                            <h3>Fresh Foodstuff사업</h3>
+                            <p>식자재 구매부터
+                                교육, 컨설팅까지
+                                Total Food Solution</p>
                         </a>
-                        <h3>Fresh Foodstuff사업</h3>
-                        <p>식자재 구매부터
-                            교육, 컨설팅까지
-                            Total Food Solution</p>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/main/img-business5.png" alt="#">
+                            <div class="screen">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <img src="img/main/img-business5.png" alt="#">
+                            </div>
+                            <h3>해외사업</h3>
+                            <p>현지화 전략을 통한
+                                푸드서비스 진출과
+                                글로벌 신사업</p>
                         </a>
-                        <h3>해외사업</h3>
-                        <p>현지화 전략을 통한
-                            푸드서비스 진출과
-                            글로벌 신사업</p>
                     </li>
                 </ul>
             </div>
@@ -192,7 +228,7 @@
                         <h3>식품연구원</h3>
                         <p>130여 명의 연구원이 재료부터 간편식, 실버푸드,
                             유아식 개발까지 맛과 영양을 매일 연구합니다.</p>
-    
+
                     </li>
                     <li class="mv-background">
                         <img src="img/main/img-infra-titC.png" alt="">
@@ -248,7 +284,7 @@
                         <li data-thumb="img/main/product-7.jpg">
                             <img src="img/main/product-7.jpg" alt="">
                             <p>후레쉬햄 오리지널(200g)</p>
-    
+
                         </li>
                         <li data-thumb="img/main/product-8.jpg">
                             <img src="img/main/product-8.jpg" alt="">
@@ -346,6 +382,7 @@
         </div>
     </div>
     <script>
+
         new fullpage('#full-page', {
             licenseKey: '',
             navigation: true,
@@ -353,14 +390,19 @@
             scrollingSpeed: 2000,
             continuousVertical: true,
             scrollOverflow: true,
+            fitToSection: false,
+            responsiveWidth: 1100,
             afterLoad: function (origin, destination, direction) {
                 if (destination.index != 0) {
                     $('#header').addClass('sticky')
-                    $('#fp-nav ul li a span, .fp-slidesNav ul li a span').css('background','#696969')
-                    $('#fp-nav ul li .fp-tooltip').css('color','#696969','fontSize','17px','fontFamily','Noto Sans KR')
+                    $('#fp-nav ul li a span, .fp-slidesNav ul li a span').css('background', '#696969')
+                    $('#fp-nav ul li .fp-tooltip').css('color', '#696969', 'fontSize', '17px', 'fontFamily', 'Noto Sans KR')
+                    $('#fp-nav ul li .fp-tooltip:after').css('background', '#696969')
                 } else {
                     $('#header').removeClass('sticky')
-                    $('#fp-nav ul li a span, .fp-slidesNav ul li a span').css('background','#fff','color','#fff')
+                    $('#fp-nav ul li a span, .fp-slidesNav ul li a span').css('background', '#fff')
+                    $('#fp-nav ul li a span, .fp-slidesNav ul li a span').css('color', '#fff',)
+                    $('#fp-nav ul li .fp-tooltip:after').css('background', '#fff')
                 }
             },
         })
