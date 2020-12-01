@@ -203,6 +203,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
     background-color: rgba(0,0,0,.5);
     z-index: 0;
 }
+.mb-gnb{display: none;}
 .btn-close{display: none;}
 .section.s0{
     .swiper-container {
@@ -606,16 +607,66 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
         display: none;
         position: fixed;
         z-index: 1;
-        display: block;
         width: 100%;
-        height: 100%;
+        // height: 100%;
         background-color: #f4f4f4;
-        color: $fontColor-1;
+        >ul{
+            color: $fontColor-1;
+            padding: 200px 70px;
+            font-weight: bold;
+            width: 100%;
+            >li{
+                font-size: 19px;
+                padding-bottom: 35px;
+                position: relative;
+                margin-right:0;
+                float:none;
+                z-index: 1;
+                width: 100%;
+                &:nth-child(5){display: none;}   
+                &:nth-child(6){display: none;}   
+                &:nth-child(7){display: none;}   
+                &:nth-child(3){margin-right: 0;}
+                &:before{content:'';display: block;width: 2px;height:20px;position: absolute;right: 0px;top:0px;background-color: $fontColor-1;transition: all .5s ease;}
+                &:after{content:'';display: block;width: 20px;height:2px;position: absolute;right:-9px;top:9px;background-color: $fontColor-1;}
+                &.on{
+                    height: 100%;padding-bottom: 0;
+                    &:before{content: none;}
+                    &:after{top: 14px;}
+                    >ul{
+                        display: block;background-color: #f4f4f4;
+                    }
+                    >a{height: auto;}
+
+                }
+                >ul{
+                    >li>a{
+                        font-size: 16px;
+                        padding-left: 10px;
+                        font-weight: normal;
+                        margin-bottom: 18px;
+                    }
+                }
+                &:nth-child(1){
+                    >ul{left: 52%;width: 100%;}
+                }
+                &:nth-child(2){
+                    >ul{left: 52%;width: 100%;}
+                }
+                &:nth-child(3){
+                    >ul{left: 52%;width: 100%;}
+                }
+                &:nth-child(4){
+                    >ul{left: 52%;width: 100%;}
+                }
+            }
+        }
     }
     .util-menu{display: none;}
     .all-menu{
         position: absolute;
         right: 10px;
+        top: 30px;
         display: block;
         width: 39px;
         height: 39px;
@@ -626,30 +677,54 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
             &:after{content: '';display: block;position: absolute;width: 24px;height: 2px;top: calc(50% - 2px);left: 0;background-color: #fff;}
         }
         &.on{
-            +#gnb{
+            +.mb-gnb{
                 display: block;
-                +.util-menu{
-                    display: block;
-                    +.btn-close{
-                        display: block;
-                        +.dim{
-                            display: block;
+                z-index: 2;
+                position: fixed;
+                height: 200px;
+                width: 100%;
+                background-color: $mainColor-1;
+                font-size: 17px;
+                color: #fff;
+                text-align: center;
+                ul{overflow: hidden;padding-top: 100px;width: 344px;margin-left: auto;margin-right: auto;display: table;
+                    li{
+                        float: left;text-align: center;
+                        &:before{
+                            content: "";display: block;background:url("../img/common/recruit.png") no-repeat 0 0;width: 33px;height: 30px;background-size: contain;position: relative;left: 20%;top: -10px;
                         }
-
+                        &:nth-child(2){
+                            &:before{
+                                background: url("../img/common/login.png") no-repeat 0 0;
+                            }
+                        }
+                        &:nth-child(3){
+                            &:before{
+                                left: 29%;background: url("../img/common/shop.png") no-repeat 0 0;background-size: contain;
+                            }
+                        }
+                        ~li{margin-left: 70px;}
+                    }
+                }
+                +#gnb{
+                    display: block;overflow-y: scroll;
+                    +.util-menu{
+                        display: block;z-index: 2;position: fixed;right: 20px;top: 5px;
+                        +.btn-close{
+                            position:fixed;z-index: 2;left: 20px;top: 18px;display: block;text-indent: -9999px;
+                            &:before{
+                                content: '';position: absolute;top: 0;left: 0;display: block;height: 30px;width: 2px;transform: rotate(45deg);background-color: #fff;
+                            }
+                            &:after{
+                                content:'';position: absolute;top: 0;left: 0;display: block;height: 30px;width: 2px;transform: rotate(-45deg);background-color: #fff;
+                            }
+                        }
                     }
                 }
             }
         }
     }
-    .btn-close{
-        position: relative;z-index: 1;left: 20px;top: 10px;
-        &:before{
-            content: '';position: absolute;top: 0;left: 0;display: block;height: 30px;width: 2px;transform: rotate(45deg);background-color: #fff;
-        }
-        &:after{
-            content:'';position: absolute;top: 0;left: 0;display: block;height: 30px;width: 2px;transform: rotate(-45deg);background-color: #fff;
-        }
-    }
+    
 
 }
 //tablet
