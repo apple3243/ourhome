@@ -35,6 +35,20 @@ function gnbFnc(el) {
             headerBg.slideUp(500)
             if (oldMenu != null) oldMenu.removeClass('on')
         })
+    } else {
+        el.find('ul>li>a').on('click', function () {
+            var ts = $(this)
+            ts.parent().siblings().find('>a').filter('.on').next().slideUp(500, function () {
+                $(this).prev().removeClass('on')
+            });
+            if ($(this).next().is(':hidden')) {
+                $(this).stop(true).addClass('on').next().slideDown(500);
+            } else {
+                $(this).next().slideUp(500, function () {
+                    ts.removeClass('on')
+                });
+            }
+        })
     }
 
 }
