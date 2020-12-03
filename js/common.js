@@ -24,12 +24,6 @@ function gnbFnc(el) {
             headerBg.stop(true).slideDown(500)
             oldMenu = $(this)
         });
-        // menu1.on('click', function (e) {
-        //     if (!$('html').hasClass('tablet')) return;
-        //     $(this).toggleClass('on');
-        //     if ($(this).hasClass('on')) oldMenu = $(this);
-        //     e.preventDefault();
-        // })
         el.on('mouseleave', function () {
             subMenu1.slideUp(500)
             headerBg.slideUp(500)
@@ -72,7 +66,6 @@ function deviceSizeChkFnc() {
     });
     $(window).trigger('resize')
 }
-
 function allMenuFnc(el) {
     el.on('click', function (e) {
         if ($('html').hasClass('tablet')) {
@@ -107,6 +100,17 @@ $(document).ready(function () {
         pauseOnHover: true,
         controls: false,
         // autoWidth: true,
+    });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1000) {
+            $('.btn-top').fadeIn(500);
+        } else {
+            $('.btn-top').fadeOut('slow');
+        }
+    });
+    $('.btn-top a').click(function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 200);
     });
 });
 
