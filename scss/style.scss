@@ -163,52 +163,17 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
 }
 }
 #fp-nav ul li{
-    &:nth-child(1){
-        .fp-tooltip{
-            left: -23px;
-        }
-    }
-    &:nth-child(2){
-        .fp-tooltip{
-            left: -31px;
-        }
-    }
-    &:nth-child(3){
-        .fp-tooltip{
-            left: -22px;
-        }
-    }
-    &:nth-child(4){
-        .fp-tooltip{
-            left: -8px;
-        }
-    }
-    &:nth-child(5){
-        .fp-tooltip{
-            left: -8px;
-        }
+    .fp-tooltip{
+        left: -91px;top: -4px;text-align: right;
     }
     &:last-child{
         display: none;
     }
-    .fp-tooltip{
-        position: relative;top:8px;overflow: unset;
-        // &:after{content: "";background-color:#fff;width: 100%;height: 2px;display: block;position: absolute;bottom: 0;}
-    }
 }
-.dim{
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.5);
-    z-index: 0;
-}
-.mb-gnb{display: none;}
+.mb-gnb{right: -9999px;position: absolute;transition: right .2s ease;}
 .btn-close{display: none;}
 .section.s0{
+    overflow-x: hidden;
     .swiper-container {
         height: 100%;overflow-x: hidden;
         .swiper-wrapper{
@@ -288,16 +253,19 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
         +p{
             color: $fontColor-1;
             font-size: 18px;
-            width: 713px;
+            max-width: 713px;
             margin: 0 auto;
+            padding: 0 10px;
         }
     }
 }
 .section.s2{
-    background:url("../img/main/bg-business.png") no-repeat 0 0;text-align: center;
+    background:url("../img/main/bg-business.png") no-repeat center bottom;
+    text-align: center;
+    background-size: cover;
     p.tit-2{padding-bottom: 60px;}
     .business-box{
-        max-width: 1400px;margin:0 auto;
+        max-width: 1300px;margin:0 auto;
         ul{
             overflow: hidden;
             li{
@@ -312,6 +280,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
                         // padding-bottom: 56.25%;
                         width: 200px;
                         height: 360px;
+                        margin: 0 auto;
                         img{
                             position: absolute;
                             top: 50%;
@@ -372,7 +341,8 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
     }
 }
 .section.s3{
-    background: url("../img/main/bg-infra.png") no-repeat 0 0;
+    background: url("../img/main/bg-infra.png") no-repeat center top;
+    background-size: cover;
     .inner-section3{
         h2.tit-1{
             em{font-weight: normal;}
@@ -429,7 +399,11 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
 }
 .section.s4{
     .inner-section-4{
-        max-width: 1300px;margin:0 auto;overflow: hidden;color:$fontColor-1;
+        max-width: 1300px;
+        margin:0 auto;
+        overflow: hidden;
+        color:$fontColor-1;
+        padding: 0 10px;
     }
     p.tit-2{margin-bottom: 35px;color: $fontColor-2;}
     .news-box-1{
@@ -450,7 +424,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
         border: 2px solid #ccc;
         border-radius: 16px;
         overflow: hidden;
-        padding: 25px;
+        padding: 25px 20px;
         .tit-3{font-size: 16px;padding-bottom: 30px;}
         
     }
@@ -471,7 +445,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
             float: right;
             width: 35%;
             position: relative;
-            img{width: 100%;height: 164px;}
+            img{width: 250px;display: block;margin: 0 auto;}
             .go{display: block;width: 10px;height: 10px;border-right: 1px solid $fontColor-1 ;border-top: 1px solid $fontColor-1;transform: rotate(45deg);top: 7px;right: 0;position: absolute;}
         }
     }
@@ -481,7 +455,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
             float: left;
             width: 48%;
             position: relative;
-            margin-right: 20px;
+            margin-right: 10px;
             ul{
                 li{
                     font-weight: 300;
@@ -501,11 +475,11 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
             .tit-3{padding-bottom: 20px;text-align: left;}
             >img{width: 100px;height: 100px;margin-bottom: 10px;}
             p{
-                padding-right: 94px;text-align: left;font-weight: 300;
+                text-align: left;font-weight: 300;
             }
             .btn-icon-box{
                 ul{
-                    overflow: hidden;text-align: right;padding-left: 197px;
+                    overflow: hidden;
                     li{
                         float: left;
                         margin-right: 10px;
@@ -533,7 +507,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
 .section.s5{
     background-color: #121212;height: 165px;
     footer{
-        width: 1068px;
+        max-width: 1068px;
         margin: 0 auto;
         padding: 35px 0;
         .upper-footer{
@@ -594,33 +568,23 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
   }
 // tablet&mobile
 @media(max-width:1099px){
-    #fp-nav{
-        &.fp-right{right: 40%;top:60px;}
-        ul{
-            li{
-                display:inline-block;
-                a{
-                    span{color: #fff;background-color: #fff;transform: translateY(-50%);}
-                }
-            }
-        }
-    }
-    .fp-slidesNav ul li a span{background-color: #fff;color: #fff;}
+    html{min-width: 360px;}
     #gnb{
-        display: none;
         position: fixed;
+        right: -9999px;
         z-index: 1;
         width: 100%;
         background-color: #f4f4f4;
         padding-top: 100px;
+        transition: right .2s ease;
         >ul{
             display: block;
             color: $fontColor-1;
-            padding: 140px 70px;
+            padding: 140px 40px;
             font-weight: bold;
             width: 100%;
             >li{
-                font-size: 19px;
+                font-size: 18px;
                 padding-bottom: 35px;
                 position: relative;
                 margin-right:0;
@@ -645,12 +609,15 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
                     }
                 }
                 >ul{
-                    display: none;
-                    >li>a{
-                        font-size: 16px;
-                        padding-left: 10px;
-                        font-weight: normal;
+                    display: none;padding-top: 22px;
+                    >li{
                         margin-bottom: 18px;
+                        &:last-child{margin-bottom: 0;}
+                        >a{
+                            font-size: 16px;
+                            padding-left: 10px;
+                            font-weight: normal;
+                        }
                     }
                 }
                 &:nth-child(1){
@@ -684,7 +651,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
         }
         &.on{
             +.mb-gnb{
-                display: block;
+                right: 0;
                 z-index: 2;
                 position: fixed;
                 height: 200px;
@@ -713,7 +680,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
                     }
                 }
                 +#gnb{
-                    display: block;overflow-y: auto;
+                    right: 0;overflow-y: auto;
                     +.util-menu{
                         display: block;z-index: 2;position: fixed;right: 20px;top: 5px;
                         +.btn-close{
@@ -730,12 +697,115 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
             }
         }
     }
-    
-
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin: 0 5px;width: 15px;height: 15px;}
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{bottom: 20px;}
+    .section.s0{
+        .section-txt{
+            position: absolute;
+            .below-text{
+            h2{font-size: 27px;width: 14%;}
+            .text-box{float: right;width: 100%;margin-left: 0;font-size: 16px;}
+            }
+            button{top: 0;margin: 10px;}
+                
+        }
+    }
+    .section.s1,.section.s2,.section.s3,.section.s4{padding: 70px 0;}
+    .section.s2,.section.s3{background-size: cover;}
+    .section.s2 .business-box ul li{width: 50%;}
+    .section.s4{
+        .news-box-1{
+            width: 100%;
+            ul{
+                li{
+                    img{height: 87%;width: auto;}
+                }
+            }
+        }
+        .news-box-2{
+            float: left;width: 48%;margin-top: 20px;
+            .inner-box-2-left{float: none;width: 100%;margin-bottom: 10px;}
+            .inner-box-2-right{float: none;width: 100%;}
+        }
+        .news-box-3{
+            min-height: 518px;margin-left: 20px;margin-top: 20px;width: 49%;
+            .inner-box-3-left{float: none;width: 100%;margin-bottom: 10px;height: 47%;}
+            .inner-box-3-right{
+                float: none;width: 100%;
+                p{margin-bottom: 10px;}
+            }
+        }   
+    } 
+    .section.s5 footer{
+        .upper-footer{
+            width: 90%;margin:0 auto;
+            .upper-left-footer{
+                float: none;margin-bottom: 20px;text-align: center;
+                ul{display: table;margin-left: auto;margin-right: auto;}
+            }
+            .upper-right-footer{
+                float: none;position: relative;width: 90%;margin:0 auto;
+                .icon-box{display: none}
+                select{display: none;}
+                .go{display: none;}
+            }
+        } 
+        .below-footer{
+            p{width: 90%;margin: 0 auto;text-align: center;}
+        }
+    } 
 }
 //tablet
 @media(min-width:721px) and (max-width:1099px){
 }
 // Mobile
 @media(max-width:720px){
+    .section.s1 img{
+        width: 200px;
+        height: 200px;
+        +p{
+            font-size: 16px;
+        }
+    }
+    .section.s2{
+        p.tit-2{width: 60%;margin: 0 auto;}
+        .business-box>ul>li{width: 100%;margin-bottom: 20px;}
+    } 
+    .section.s3 .inner-section3{
+        >ul{
+            padding: 0 10px;
+            >li{
+                text-align: center;padding: 0 10px;
+                &:nth-of-type(1),&:nth-of-type(4){
+                    padding-left: 0;
+                    p{
+                        padding-right: 0;
+                    }
+                }
+                &:nth-of-type(1),&:nth-of-type(3){padding-left: 10px;}
+                &.mv-background{display: none;}
+
+            }
+        }
+    }
+    .section.s4{
+        .news-box-1{
+            margin-bottom: 20px;padding: 30px;margin-right: 0;
+            ul{
+                li{
+                    img{height: 80%;width: 100%;}
+                }
+            }
+        }
+        .news-box-2{
+            float: none;width: 100%;
+        }
+        .news-box-3{
+            min-height: 518px;margin-left: 20px;margin-top: 20px;width: 100%;
+            .inner-box-3-left{float: none;width: 100%;height: 50%;}
+            .inner-box-3-right{
+                float: none;width: 100%;
+            }
+        }   
+    } 
 }

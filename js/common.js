@@ -43,6 +43,7 @@ function gnbFnc(el) {
             });
             if ($(this).next().is(':hidden')) {
                 $(this).stop(true).addClass('on').next().slideDown(500);
+                $('html').addClass('ovh')
             } else {
                 $(this).next().slideUp(500, function () {
                     ts.removeClass('on')
@@ -86,6 +87,8 @@ function allMenuFnc(el) {
     $('.btn-close').on('click', function (e) {
         e.preventDefault();
         $('.all-menu').removeClass('on')
+        $('#header').css('padding', '')
+        $('#header .header-inner-wrap').css('padding', '')
     })
 }
 
@@ -103,6 +106,7 @@ $(document).ready(function () {
         speed: 500,
         pauseOnHover: true,
         controls: false,
+        // autoWidth: true,
     });
 });
 
