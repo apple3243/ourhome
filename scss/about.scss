@@ -55,9 +55,9 @@
     }
 }
 #container{
-    margin-top: 50px;width: 100%;
+    margin: 50px 0 100px;width: 100%;
     .container-title{
-        text-align: center;width: 960px;margin:0 auto;display: block;
+        text-align: center;max-width: 960px;margin:0 auto;display: block;
         h4{font-size: 30px;color: $mainColor-1;}
         p{font-size: 18px;padding: 30px 0;}
     }
@@ -67,7 +67,7 @@
         background: #f4f4f4;
         p{display: inline-block;margin-top: 30px;}
         .description-wrap{
-            width: 50%;display: inline-block;padding-top: 180px;
+            height: 300px;width: 50%;display: block;background-color: #f4f4f4;padding: 81px 20px;
             .about-title{
                 font-size: 32px;
                 margin-bottom: 30px;
@@ -75,17 +75,18 @@
                 width: 100%;
                 margin: 0 auto;
             }
-            p:last-child{font-size: 18px;color: $fontColor-1;padding: 0 80px;}
+            p:last-child{font-size: 18px;color: $fontColor-1;}
         }
         .box-1,.box-3{
-            overflow: hidden;width: 100%;text-align: center;
-            .about-title{float: left;}
-            img{float: right;width: 50%;height: 500px;}
+            overflow: hidden;width: 100%;text-align: center;background:url("../img/about/salad.jpg") no-repeat center;
+            background-size: 100%;height: 300px;
         }
         .box-2{
-            overflow: hidden;width: 100%;text-align: center;
-            .about-title{float: right;}
-            img{float: left;width: 50%;height: 500px;}
+            overflow: hidden;width: 100%;text-align: center;background:url("../img/about/rock.jpg") no-repeat center;height: 300px;background-size:cover;
+            .description-wrap{float: right;}
+        }
+        .box-3{
+            background:url("../img/about/bubble.jpg")no-repeat center;background-size: cover;
         }
     }
     .small-title{font-size: 24px;color: $mainColor-1;font-weight: 700;margin: 70px 0 30px;text-align: center;}
@@ -93,6 +94,111 @@
         p{text-align: center;font-size: 33px;width: 50%;margin: 0 auto;}
     }
     .core-value{
-        
+        max-width: 1000px;margin:0 auto;text-align: center;
+        div{
+            width: 180px;height: 180px;display: inline-block;border: 5px solid $mainColor-1;border-radius: 90px;
+            &.value-box-2{margin: 0 30px;}
+            p{font-size: 28px;padding-top: 60px;}
+        }        
     }
+}
+.btn-top{
+    position: fixed;
+    right: 20px;
+    bottom:200px;
+    width: 30px;
+    height: 30px;
+    background-color:#4b4b4b;
+    border-radius:50px;
+    span{
+        position: absolute;left: 34%;top: 42%;display: block;height: 10px;width: 10px;border-top: 1px solid #fff;border-left: 1px solid #fff;transform: rotate(45deg);
+    }
+} 
+// tablet
+@media(min-width:721px) and (max-width:1099px){
+    .bg-banner{
+        height: 350px;
+    }
+    .bg-tit-1{
+        font-size: 38px;padding-top: 100px;margin-bottom: 25px;
+    }
+    .bg-tit-2{
+        font-size: 18px;padding-bottom: 100px;
+    }
+    #container{
+        .about{
+            .box-2,.box-3{
+            .description-wrap{
+                padding: 48px 20px;
+            } 
+            }
+            .description-wrap{
+                .about-title{
+                    font-size: 24px;
+                }
+                p:last-child{
+                    font-size: 16px}
+            } 
+        }
+        .mission{
+            p{width: 69%}
+        }
+    } 
+}
+//mobile
+@media(max-width:720px){
+    .bg-banner{
+        height: 300px;
+    }
+    .bg-tit-1{
+        font-size: 32px;padding-top: 100px;margin-bottom: 30px;
+    }
+    .bg-tit-2{
+        font-size: 18px;padding-bottom: 100px;
+    }
+    #container{
+        margin: 80px 0;
+        .container-title{
+            padding: 0 20px;
+            h4{font-size: 24px;}
+            p{font-size: 16px;}
+        }
+        .about{
+            .description-wrap{
+                padding: 93px 20px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,.5);
+                .about-title{font-size: 24px;color: #fff;}
+                p:last-child{padding: 0;font-size: 16px;color: #efefef;}
+            }
+            .box-1, .box-3{
+                min-height: 300px;
+                background: url("../img/about/salad.jpg")no-repeat center bottom;
+                img{display: none;}
+                .about-title{float: none;}
+            }           
+            .box-2{
+                margin-top: 20px;min-height: 300px;background: url("../img/about/rock.jpg") no-repeat center;background-size:cover;
+                img{display: none;}
+            }
+            .box-3{
+                margin-top: 20px;background: url("../img/about/bubble.jpg") no-repeat center;background-size: cover;
+            }
+        } 
+        .mission{
+            p{
+                font-size: 28px;
+                width: 90%;
+            }
+        }
+        .core-value{
+            div{
+                float: none;
+                margin:0 auto;
+                margin-bottom: 20px;
+                &.value-box-2{display: block;margin: 0 auto;margin-bottom: 20px;}
+            }
+        }
+    } 
 }

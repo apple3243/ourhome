@@ -45,6 +45,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
         position: fixed;background-color: #000;box-shadow: 0 2px 2px rgba(0,0,0,0.3);
     }
 }
+#gnb{z-index: 999;}
 @media(min-width:1100px){
 #gnb{
     >ul{color:#fff;position: absolute;top: 37px;height: 100%;
@@ -178,7 +179,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
         height: 100%;overflow-x: hidden;
         .swiper-wrapper{
             .swiper-slide{
-                img{position: absolute;height: 100%;width: 100%;object-fit:cover}
+                img{position: absolute;height: 100%;width: 100%;object-fit:cover;overflow-x: hidden;}
             }
         }
     }
@@ -498,6 +499,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
 .section.s5{
     background-color: #121212;height: 165px;
     footer{
+        height: 100%;
         max-width: 1068px;
         margin: 0 auto;
         padding: 35px 0;
@@ -754,7 +756,10 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
             }
         } 
         .below-footer{
-            p{width: 90%;margin: 0 auto;text-align: center;}
+            p{
+                width: 90%;margin: 0 auto;text-align: center;
+                &:last-child{margin-top: 10px;}
+            }
         }
     } 
 }
@@ -810,5 +815,11 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
                 float: none;width: 100%;
             }
         }   
+    } 
+    .section.s5 footer{
+        padding: 20px 0;
+        .below-footer{
+            p{font-size: 14px;}
+        }
     } 
 }

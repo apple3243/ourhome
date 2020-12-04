@@ -85,22 +85,10 @@ function allMenuFnc(el) {
     })
 }
 
-$(document).ready(function () {
-    $("#lightSlider").lightSlider({
-        gallery: true,
-        item: 1,
-        vertical: true,
-        verticalHeight: 370,
-        vThumbWidth: 80,
-        thumbItem: 4,
-        thumbMargin: 20,
-        slideMargin: 0,
-        auto: true,
-        speed: 500,
-        pauseOnHover: true,
-        controls: false,
-        // autoWidth: true,
-    });
+$(function () {
+    deviceSizeChkFnc();
+    gnbFnc($('#gnb'))
+    allMenuFnc($('.all-menu'))
     $(window).scroll(function () {
         if ($(this).scrollTop() > 1000) {
             $('.btn-top').fadeIn(500);
@@ -112,11 +100,4 @@ $(document).ready(function () {
         e.preventDefault();
         $('html, body').animate({ scrollTop: 0 }, 200);
     });
-});
-
-
-$(function () {
-    deviceSizeChkFnc();
-    gnbFnc($('#gnb'))
-    allMenuFnc($('.all-menu'))
 })

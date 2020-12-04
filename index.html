@@ -13,6 +13,7 @@
     <script src="js/scrolloverflow.min.js"></script>
     <script src="js/lightslider.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/fullpage.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -112,7 +113,6 @@
                     <div class="swiper-slide"><img src="img/main/banner-slide-6.jpg" alt=""></div>
                     <div class="swiper-slide"><img src="img/main/banner-slide-7.jpg" alt=""></div>
                     <div class="swiper-slide"><img src="img/main/banner-slide-8.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="img/main/banner-slide-9.jpg" alt=""></div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -414,11 +414,17 @@
             // Optional parameters
             direction: 'horizontal',
             loop: true,
+            auto: true,
             updateOnWindowResize: true,
-
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
+                clickable: true,
             },
 
             // Navigation arrows
