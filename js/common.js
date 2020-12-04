@@ -84,11 +84,22 @@ function allMenuFnc(el) {
         $('#header .header-inner-wrap').css('padding', '')
     })
 }
-
+function navMenuFnc(e) {
+    var navMenu1 = e.find('.parent-menu>a')
+    var navMenu2 = e.find('.current-menu>a')
+    navMenu1.on('click', function () {
+        $(this).toggleClass('on')
+    })
+    navMenu2.on('click', function () {
+        $(this).toggleClass('on')
+    })
+    e.preventDefault();
+}
 $(function () {
     deviceSizeChkFnc();
     gnbFnc($('#gnb'))
     allMenuFnc($('.all-menu'))
+    navMenuFnc($('#nav .nav-wrap'))
     $(window).scroll(function () {
         if ($(this).scrollTop() > 1000) {
             $('.btn-top').fadeIn(500);

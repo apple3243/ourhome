@@ -6,14 +6,310 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>아워홈 | 아워홈 비즈니스</title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/common.js"></script>
     <link rel="shortcut icon" href="img/common/ourhome.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/business.min.css">
 </head>
 
 <body>
+    <header id="header">
+        <div class="header-inner-wrap">
+            <h1 class="logo"><a href="index.html"><img src="img/common/img-logo.png" alt="아워홈 메인"></a></h1>
+            <div class="all-menu">
+                <span></span>
+            </div>
+            <div class="mb-gnb">
+                <ul>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">아워홈식품점<br>Mall</a></li>
+                </ul>
+            </div>
+            <div id="gnb" class="gnb">
+                <ul>
+                    <li class="gnb-list-1"><a href="#">About 아워홈</a>
+                        <ul>
+                            <li><a href="about.html">아워홈소개</a></li>
+                            <li><a href="#">CEO인사말</a></li>
+                            <li><a href="#">미션ㆍ핵심가치</a></li>
+                            <li><a href="#">히스토리</a></li>
+                            <li><a href="#">나눔과 상생</a></li>
+                            <li><a href="#">윤리경영</a></li>
+                            <li><a href="#">재무정보</a></li>
+                            <li><a href="#">CI 소개</a></li>
+                            <li><a href="location.html">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-2"><a href="#">Business</a>
+                        <ul>
+                            <li><a href="business.html">Cooking Meal사업</a></li>
+                            <li><a href="#">식품사업</a></li>
+                            <li><a href="#">Restaurant사업</a></li>
+                            <li><a href="#">Fresh Foodstuff사업</a></li>
+                            <li><a href="#">해외사업</a></li>
+                            <li><a href="#">인프라</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-3"><a href="#">NewsRoom</a>
+                        <ul>
+                            <li><a href="news.html">아워홈 소식</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">TV & Viral Film</a></li>
+                            <li><a href="#">아워홈 전시관</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-4"><a href="#">CustomerCenter</a>
+                        <ul>
+                            <li><a href="#">고객의 소리</a></li>
+                            <li><a href="consult.html">온라인 상담</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-5"><a href="#">인재채용</a>
+                    </li>
+                    <li class="gnb-list-6"><a href="#">로그인</a>
+                        <ul>
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">회원서비스</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-7"><a href="#"><img src="img/common/img-logo-right.png" alt="아워홈 식품점Mall"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="util-menu">
+                <select name="language" id="language">
+                    <option value="default">LANGUAGE</option>
+                    <option value="KOREAN">KOR</option>
+                    <option value="ENGLISH">ENG</option>
+                    <option value="CHINESE">CHN</option>
+                </select>
+            </div>
+            <div class="btn-close">
+                <span>닫기</span>
+            </div>
+        </div>
+    </header>
+    <div class="bg-banner">
+        <h2 class="bg-tit-1">아워홈 비즈니스</h2>
+        <h3 class="bg-tit-2">고객에게 차별화된 서비스를 제공합니다</h3>
+    </div>
+    <div id="nav">
+        <div class="nav-wrap">
+            <div class="home-icon"><a href="index.html"><img src="img/common/icon-navi-home.png" alt="홈으로가기"></a>
+            </div>
+            <div class="parent-menu">
+                <a href="#">Business</a>
+                <ul class="parent-nav">
+                    <li><a href="#">About 아워홈</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">News Room</a></li>
+                    <li><a href="#">Customer Center</a></li>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">아워홈 식품점 Mall</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">회원서비스</a></li>
+                </ul>
+            </div>
+            <div class="current-menu">
+                <a href="#">Cooking Meal 사업</a>
+                <ul class="current-nav">
+                    <li><a href="#">Cooking Meal사업</a></li>
+                    <li><a href="#">식품사업</a></li>
+                    <li><a href="#">Restaurant사업</a></li>
+                    <li><a href="#">Fresh Foodstuff사업</a></li>
+                    <li><a href="#">해외사업</a></li>
+                    <li><a href="#">인프라</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div class="container-title">
+            <img src="img/business/cooking-meal.png" alt="">
+            <div class="img-text">
+                <p class="main-title">매일 100만명의 고객과 만나는 <span>Cooking Meal</span></p>
+                <p>1984년부터 시작된 Cooking Meal사업은 30여 년 넘게 쌓아온 다양한 운영경험과 메뉴개발을 바탕으로
+                    체계적이고 전문화된 시스템을 통해 전국 1,000여 개의 다양한 사업장에서
+                    하루 100만 명의 고객에게 건강한 식탁을 제공합니다.</p>
+            </div>
+        </div>
+        <div class="container-row-1">
+            <div class="row-1-box-1">
+                <div class="img-box">
+                </div>
+                <p class="img-title">Health</p>
+                <p>고객의 건강을 위해
+                    영양과 칼로리까지
+                    고려한 균형 잡힌
+                    식사를 제공합니다.</p>
+            </div>
+            <div class="row-1-box-2">
+                <div class="img-box">
+                </div>
+                <p class="img-title">Delicious</p>
+                <p>오늘도 밥심이 필요한
+                    당신에게 아워홈은
+                    "365일 건강한 식탁"을
+                    선보입니다.</p>
+            </div>
+            <div class="row-1-box-3">
+                <div class="img-box">
+                </div>
+                <p class="img-title">Fun</p>
+                <p>다양한 이벤트와
+                    행사를 통해
+                    고객에게 즐거움을
+                    선사합니다.</p>
+            </div>
+        </div>
+        <div class="container-row-2">
+            <p class="container-tit-1">고객 여러분의 일상에서
+                아워홈이 함께하고 있습니다
+            </p>
+            <p>산업체, 오피스의 사원식당은 물론 학교, 병원, 골프장, 휴게소, 호텔 등
+                고객사의 성격과 니즈에 맞게 토탈 식음서비스를 제공합니다.</p>
+            <div class="round-box-1">
+                <p>오피스/산업체</p>
+            </div>
+            <div class="round-box-2">
+                <p>골프장</p>
+            </div>
+            <div class="round-box-3">
+                <p>병원</p>
+            </div>
+            <div class="round-box-4">
+                <p>레저시설</p>
+            </div>
+            <div class="round-box-5">
+                <p>학교</p>
+            </div>
+        </div>
+        <div class="container-row-3">
+            <p class="container-tit-1">차별화 서비스
+            </p>
+            <div class="row-3-box-1">
+                <p>01</p>
+                <p class="row3-txt-1">Cooking Meal<br>
+                    모바일앱</p>
+                <p class="row3-txt-2">
+                    비대면이 일상화된 요즘<br>
+                    모바일 앱으로 다양한 서비스 적극 제공
+                </p>
+            </div>
+            <div class="row-3-box-2">
+                <p>02</p>
+                <p class="row3-txt-1">IN THE BOX<br>
+                    건강하고 든든한 한 끼</p>
+                <p class="row3-txt-2">
+                    언제 어디서나 간편하게 즐길 수 있는<br>
+                    테이크아웃 메뉴 맞춤 제공
+                </p>
+            </div>
+            <div class="row-3-box-3">
+                <p>03</p>
+                <p class="row3-txt-1">
+                    식사가 풍요로워지는<br>
+                    영양소 이야기
+                </p>
+                <p class="row3-txt-2">
+                    “약과 음식의 근본은 같다”는 철학을 바탕으로<br>
+                    영양이 풍부한 식단과 영양소 정보를 제공
+                </p>
+            </div>
+        </div>
+        <div class="container-row-4">
+            <p class="container-tit-1">Cooking Meal 사업 브랜드 소개
+            </p>
+            <div class="row-4-box-1">
+                <div class="box-dim"></div>
+                <img src="img/business/img-fs2-img1.png" alt="" class="logo-img">
+                <p>수십년의 운영노하우를 바탕으로 건강한 식사를 맛 가득, 정성 가득하게 만들어 제공합니다</p>
+            </div>
+            <div class="row-4-box-2">
+                <div class="box-dim"></div>
+                <img src="img/business/img-fs2-img2.png" alt="" class="logo-img">
+                <p>‘IN THE BOX’는 바쁜 현대인을 위한 Cooking Meal 테이크아웃 브랜드 입니다.</p>
+            </div>
+            <div class="row-4-box-3">
+                <div class="box-dim"></div>
+                <img src="img/business/img-fs2-img3.png" alt="" class="logo-img">
+                <p>일상속의 여유가 최고의 커피향으로 채워지길 바라는 마음을 담은 고객 맞춤형 카페입니다.</p>
+            </div>
+            <div class="row-4-box-4">
+                <div class="box-dim"></div>
+                <img src="img/business/img-fs2-img4.png" alt="" class="logo-img">
+                <p>각종 음료와 스낵류, 건강 간식류를 합리적인 가격으로 편리하게 만날 수 있는
+                    편의형 매점입니다.</p>
+            </div>
+        </div>
+        <div class="container-row-5">
+            <p class="container-tit-1">Cooking Meal사업 온라인 상담</p>
+            <p>아워홈 Cooking Meal 상담을 원하시면 신청해 주세요.</p>
+            <div class="row-5-box-1">
+                <div class="img-box"></div>
+                <p>고객상담 및 현황조사</p>
+            </div>
+            <div class="row-5-box-2">
+                <div class="img-box"></div>
+                <p>운영 계획서 제안</p>
+            </div>
+            <div class="row-5-box-3">
+                <div class="img-box"></div>
+                <p>위탁운영 계약체결</p>
+            </div>
+            <div class="row-5-box-4">
+                <div class="img-box"></div>
+                <p>오픈 준비</p>
+            </div>
+            <div class="row-5-box-5">
+                <div class="img-box"></div>
+                <p>운영 및 관리</p>
+            </div>
+            <button></button>
+        </div>
+        <div class="btn-top"><a href="#header"><span></span></a></div>
+    </div>
 
+    <div class="section s5 fp-auto-height">
+        <footer id="footer">
+            <div class="upper-footer">
+                <div class="upper-left-footer">
+                    <ul class="link-footer">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="location.html">오시는 길</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                </div>
+                <div class="upper-right-footer">
+                    <ul class="icon-box">
+                        <li><a href="#"><img src="img/common/icon-blog1.png" alt="아워홈블로그"></a></li>
+                        <li><a href="#"><img src="img/common/icon-fb1.png" alt="아워홈페이스북"></a></li>
+                        <li><a href="#"><img src="img/common/icon-yt1.png" alt="아워홈유튜브"></a></li>
+                    </ul>
+                    <select name="family-site" id="family-site">
+                        <option value="FAMILY SITE">FAMILY SITE</option>
+                        <option value="아워홈 식품점 Mall">아워홈 식품점 Mall</option>
+                        <option value="아워홈 호스피탈리티">아워홈 호스피탈리티</option>
+                        <option value="아모리스">아모리스</option>
+                        <option value="지수원">지수원</option>
+                        <option value="웰프라자">웰프라자</option>
+                        <option value="아워홈 TFS">아워홈 TFS</option>
+                        <option value="공급사포털">공급사포털</option>
+                    </select>
+                    <button class="go">GO</button>
+                </div>
+            </div>
+            <div class="below-footer">
+                <p>서울특별시 강서구 마곡중앙10로 91 아워홈 마곡식품연구센터(우편번호: 07792) 고객센터 080-234-7575</p>
+                <p>copyright ⓒ 2019 OURHOME. all rights reserved.</p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
