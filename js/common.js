@@ -109,6 +109,6 @@ $(function () {
     });
     $('.btn-top a').click(function (e) {
         e.preventDefault();
-        $('html, body').animate({ scrollTop: 0 }, 200);
+        $('html, body').animate({ scrollTop: 0 }, 500);
     });
 })

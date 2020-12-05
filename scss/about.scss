@@ -28,6 +28,7 @@
             width: 140px;
             padding-right: 31px;
             position: relative;
+            z-index: 10;
             &:after{content: '';position: absolute;top: 13px;right: 10px;display: block;width: 9px;height: 9px;border-right: 1px solid #555;border-bottom: 1px solid #555;transform: rotate(45deg);}
             .parent-nav{
             position: relative;top: -9999px;transition: top .2s ease;
@@ -44,7 +45,11 @@
                         height: 40px;
                         background-color: #fff;
                     }
-                    
+                    &:last-child{
+                        >a{
+                            border-bottom: 1px solid #acacac;
+                        }
+                    }   
                 }
             }
             >a{
@@ -64,6 +69,7 @@
             padding-right: 20px;
             display: block;
             position: relative;
+            z-index: 10;
             &:after{content: '';position: absolute;top: 13px;right: 10px;display: block;width: 9px;height: 9px;border-right: 1px solid #555;border-bottom: 1px solid #555;transform: rotate(45deg);}
             .current-nav{
                 position: relative;top: -9999px;transition: top .2s ease;

@@ -1,1 +1,438 @@
-.bg-banner{height:590px;background:url("../img/about/aboutus_bg.jpg") no-repeat 0 0;width:100%;background-position:center bottom}.bg-tit-1{font-size:62px;text-align:center;color:#fefefe;font-weight:700;padding-top:230px;margin-bottom:40px}.bg-tit-2{color:#fefefe;font-size:20px;text-align:center;padding-bottom:240px}#nav{display:block;width:100%;border-bottom:1px solid #acacac;height:40px;line-height:40px}#nav .nav-wrap{position:absolute;max-width:1300px;margin:0 auto;overflow:hidden;text-align:center;height:100%}#nav .nav-wrap .home-icon{width:57px;height:100%;float:left}#nav .nav-wrap .home-icon a{display:block;width:100%;height:40px;border-left:1px solid #acacac;border-right:1px solid #acacac}#nav .nav-wrap .home-icon img{width:20px;height:20px}#nav .nav-wrap .parent-menu{float:left;color:#000;font-size:16px;border-right:1px solid #acacac;display:block;height:40px;width:140px;padding-right:31px;position:relative}#nav .nav-wrap .parent-menu:after{content:'';position:absolute;top:13px;right:10px;display:block;width:9px;height:9px;border-right:1px solid #555;border-bottom:1px solid #555;-webkit-transform:rotate(45deg);transform:rotate(45deg)}#nav .nav-wrap .parent-menu .parent-nav{position:relative;top:-9999px;-webkit-transition:top .2s ease;transition:top .2s ease}#nav .nav-wrap .parent-menu .parent-nav li a{line-height:40px;display:block;font-size:14px;border-right:1px solid #acacac;width:140px;border-left:1px solid #acacac;padding-left:7px;text-align:left;height:40px;background-color:#fff}#nav .nav-wrap .parent-menu>a{display:inline-block;width:130px;height:100%;padding-right:20px}#nav .nav-wrap .parent-menu>a.on+.parent-nav{top:0px}#nav .nav-wrap .current-menu{float:left;color:#9d3248;font-size:16px;border-right:1px solid #acacac;width:130px;height:40px;padding-right:20px;display:block;position:relative}#nav .nav-wrap .current-menu:after{content:'';position:absolute;top:13px;right:10px;display:block;width:9px;height:9px;border-right:1px solid #555;border-bottom:1px solid #555;-webkit-transform:rotate(45deg);transform:rotate(45deg)}#nav .nav-wrap .current-menu .current-nav{position:relative;top:-9999px;-webkit-transition:top .2s ease;transition:top .2s ease}#nav .nav-wrap .current-menu .current-nav>li>a{line-height:40px;font-size:14px;display:block;width:130px;border-right:1px solid #acacac;text-align:left;padding-left:7px;height:40px;background-color:#fff;border-left:1px solid #acacac}#nav .nav-wrap .current-menu .current-nav>li:last-child a{border-bottom:1px solid #acacac}#nav .nav-wrap .current-menu>a{display:inline-block;width:170px;height:100%;padding-right:77px}#nav .nav-wrap .current-menu>a.on+.current-nav{top:0px}#container{margin:50px 0 100px;width:100%;z-index:0}#container .container-title{text-align:center;max-width:960px;margin:0 auto;display:block}#container .container-title h4{font-size:30px;color:#ef7c00}#container .container-title p{font-size:18px;padding:30px 0}#container .about{margin-top:60px;width:100%;background:#f4f4f4}#container .about p{display:inline-block;margin-top:30px}#container .about .description-wrap{height:300px;width:50%;display:block;background-color:#f4f4f4;padding:81px 20px}#container .about .description-wrap .about-title{font-size:32px;margin-bottom:30px;color:#000;width:100%;margin:0 auto}#container .about .description-wrap p:last-child{font-size:18px;color:#4e4e4e}#container .about .box-1,#container .about .box-3{overflow:hidden;width:100%;text-align:center;background:url("../img/about/salad.jpg") no-repeat center;background-size:100%;height:300px}#container .about .box-2{overflow:hidden;width:100%;text-align:center;background:url("../img/about/rock.jpg") no-repeat center;height:300px;background-size:cover}#container .about .box-2 .description-wrap{float:right}#container .about .box-3{background:url("../img/about/bubble.jpg") no-repeat center;background-size:cover}#container .small-title{font-size:24px;color:#ef7c00;font-weight:700;margin:70px 0 30px;text-align:center}#container .mission p{text-align:center;font-size:33px;width:50%;margin:0 auto}#container .core-value{max-width:1000px;margin:0 auto;text-align:center}#container .core-value div{width:180px;height:180px;display:inline-block;border:5px solid #ef7c00;border-radius:90px}#container .core-value div.value-box-2{margin:0 30px}#container .core-value div p{font-size:28px;padding-top:60px}.btn-top{position:fixed;right:20px;bottom:200px;width:30px;height:30px;background-color:#4b4b4b;border-radius:50px}.btn-top span{position:absolute;left:34%;top:42%;display:block;height:10px;width:10px;border-top:1px solid #fff;border-left:1px solid #fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}@media (min-width: 721px) and (max-width: 1099px){.bg-banner{height:350px}.bg-tit-1{font-size:38px;padding-top:100px;margin-bottom:25px}.bg-tit-2{font-size:18px;padding-bottom:100px}#container .about .box-2 .description-wrap,#container .about .box-3 .description-wrap{padding:48px 20px}#container .about .description-wrap .about-title{font-size:24px}#container .about .description-wrap p:last-child{font-size:16px}#container .mission p{width:69%}}@media (max-width: 720px){.bg-banner{height:300px}.bg-tit-1{font-size:32px;padding-top:100px;margin-bottom:30px}.bg-tit-2{font-size:18px;padding-bottom:100px}#container{margin:80px 0}#container .container-title{padding:0 20px}#container .container-title h4{font-size:24px}#container .container-title p{font-size:16px}#container .about .description-wrap{padding:93px 20px;width:100%;height:100%;background-color:rgba(0,0,0,0.5)}#container .about .description-wrap .about-title{font-size:24px;color:#fff}#container .about .description-wrap p:last-child{padding:0;font-size:16px;color:#efefef}#container .about .box-1,#container .about .box-3{min-height:300px;background:url("../img/about/salad.jpg") no-repeat center bottom}#container .about .box-1 img,#container .about .box-3 img{display:none}#container .about .box-1 .about-title,#container .about .box-3 .about-title{float:none}#container .about .box-2{margin-top:20px;min-height:300px;background:url("../img/about/rock.jpg") no-repeat center;background-size:cover}#container .about .box-2 img{display:none}#container .about .box-3{margin-top:20px;background:url("../img/about/bubble.jpg") no-repeat center;background-size:cover}#container .mission p{font-size:28px;width:90%}#container .core-value div{float:none;margin:0 auto;margin-bottom:20px}#container .core-value div.value-box-2{display:block;margin:0 auto;margin-bottom:20px}}
+@charset "UTF-8";
+/* (연한글씨) */
+/* (진한글씨) */
+/* (링크) */
+/* (강조) */
+/* (input) */
+.bg-banner {
+  height: 590px;
+  background: url("../img/about/aboutus_bg.jpg") no-repeat 0 0;
+  width: 100%;
+  background-position: center bottom;
+}
+
+.bg-tit-1 {
+  font-size: 62px;
+  text-align: center;
+  color: #fefefe;
+  font-weight: 700;
+  padding-top: 230px;
+  margin-bottom: 40px;
+}
+
+.bg-tit-2 {
+  color: #fefefe;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 240px;
+}
+
+#nav {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #acacac;
+  height: 40px;
+  line-height: 40px;
+}
+
+#nav .nav-wrap {
+  position: absolute;
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  height: 100%;
+}
+
+#nav .nav-wrap .home-icon {
+  width: 57px;
+  height: 100%;
+  float: left;
+}
+
+#nav .nav-wrap .home-icon a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-left: 1px solid #acacac;
+  border-right: 1px solid #acacac;
+}
+
+#nav .nav-wrap .home-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+#nav .nav-wrap .parent-menu {
+  float: left;
+  color: #000;
+  font-size: 16px;
+  border-right: 1px solid #acacac;
+  display: block;
+  height: 40px;
+  width: 140px;
+  padding-right: 31px;
+  position: relative;
+  z-index: 10;
+}
+
+#nav .nav-wrap .parent-menu:after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-right: 1px solid #555;
+  border-bottom: 1px solid #555;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#nav .nav-wrap .parent-menu .parent-nav {
+  position: relative;
+  top: -9999px;
+  -webkit-transition: top .2s ease;
+  transition: top .2s ease;
+}
+
+#nav .nav-wrap .parent-menu .parent-nav li a {
+  line-height: 40px;
+  display: block;
+  font-size: 14px;
+  border-right: 1px solid #acacac;
+  width: 140px;
+  border-left: 1px solid #acacac;
+  padding-left: 7px;
+  text-align: left;
+  height: 40px;
+  background-color: #fff;
+}
+
+#nav .nav-wrap .parent-menu .parent-nav li:last-child > a {
+  border-bottom: 1px solid #acacac;
+}
+
+#nav .nav-wrap .parent-menu > a {
+  display: inline-block;
+  width: 130px;
+  height: 100%;
+  padding-right: 20px;
+}
+
+#nav .nav-wrap .parent-menu > a.on + .parent-nav {
+  top: 0px;
+}
+
+#nav .nav-wrap .current-menu {
+  float: left;
+  color: #9d3248;
+  font-size: 16px;
+  border-right: 1px solid #acacac;
+  width: 130px;
+  height: 40px;
+  padding-right: 20px;
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+#nav .nav-wrap .current-menu:after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-right: 1px solid #555;
+  border-bottom: 1px solid #555;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#nav .nav-wrap .current-menu .current-nav {
+  position: relative;
+  top: -9999px;
+  -webkit-transition: top .2s ease;
+  transition: top .2s ease;
+}
+
+#nav .nav-wrap .current-menu .current-nav > li > a {
+  line-height: 40px;
+  font-size: 14px;
+  display: block;
+  width: 130px;
+  border-right: 1px solid #acacac;
+  text-align: left;
+  padding-left: 7px;
+  height: 40px;
+  background-color: #fff;
+  border-left: 1px solid #acacac;
+}
+
+#nav .nav-wrap .current-menu .current-nav > li:last-child a {
+  border-bottom: 1px solid #acacac;
+}
+
+#nav .nav-wrap .current-menu > a {
+  display: inline-block;
+  width: 170px;
+  height: 100%;
+  padding-right: 77px;
+}
+
+#nav .nav-wrap .current-menu > a.on + .current-nav {
+  top: 0px;
+}
+
+#container {
+  margin: 50px 0 100px;
+  width: 100%;
+  z-index: 0;
+}
+
+#container .container-title {
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+  display: block;
+}
+
+#container .container-title h4 {
+  font-size: 30px;
+  color: #ef7c00;
+}
+
+#container .container-title p {
+  font-size: 18px;
+  padding: 30px 0;
+}
+
+#container .about {
+  margin-top: 60px;
+  width: 100%;
+  background: #f4f4f4;
+}
+
+#container .about p {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+#container .about .description-wrap {
+  height: 300px;
+  width: 50%;
+  display: block;
+  background-color: #f4f4f4;
+  padding: 81px 20px;
+}
+
+#container .about .description-wrap .about-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #000;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#container .about .description-wrap p:last-child {
+  font-size: 18px;
+  color: #4e4e4e;
+}
+
+#container .about .box-1, #container .about .box-3 {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  background: url("../img/about/salad.jpg") no-repeat center;
+  background-size: 100%;
+  height: 300px;
+}
+
+#container .about .box-2 {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  background: url("../img/about/rock.jpg") no-repeat center;
+  height: 300px;
+  background-size: cover;
+}
+
+#container .about .box-2 .description-wrap {
+  float: right;
+}
+
+#container .about .box-3 {
+  background: url("../img/about/bubble.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#container .small-title {
+  font-size: 24px;
+  color: #ef7c00;
+  font-weight: 700;
+  margin: 70px 0 30px;
+  text-align: center;
+}
+
+#container .mission p {
+  text-align: center;
+  font-size: 33px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#container .core-value {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#container .core-value div {
+  width: 180px;
+  height: 180px;
+  display: inline-block;
+  border: 5px solid #ef7c00;
+  border-radius: 90px;
+}
+
+#container .core-value div.value-box-2 {
+  margin: 0 30px;
+}
+
+#container .core-value div p {
+  font-size: 28px;
+  padding-top: 60px;
+}
+
+.btn-top {
+  position: fixed;
+  right: 20px;
+  bottom: 200px;
+  width: 30px;
+  height: 30px;
+  background-color: #4b4b4b;
+  border-radius: 50px;
+}
+
+.btn-top span {
+  position: absolute;
+  left: 34%;
+  top: 42%;
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+@media (min-width: 721px) and (max-width: 1099px) {
+  .bg-banner {
+    height: 350px;
+  }
+  .bg-tit-1 {
+    font-size: 38px;
+    padding-top: 100px;
+    margin-bottom: 25px;
+  }
+  .bg-tit-2 {
+    font-size: 18px;
+    padding-bottom: 100px;
+  }
+  #container .about .box-2 .description-wrap, #container .about .box-3 .description-wrap {
+    padding: 48px 20px;
+  }
+  #container .about .description-wrap .about-title {
+    font-size: 24px;
+  }
+  #container .about .description-wrap p:last-child {
+    font-size: 16px;
+  }
+  #container .mission p {
+    width: 69%;
+  }
+}
+
+@media (max-width: 720px) {
+  .bg-banner {
+    height: 300px;
+  }
+  .bg-tit-1 {
+    font-size: 32px;
+    padding-top: 100px;
+    margin-bottom: 30px;
+  }
+  .bg-tit-2 {
+    font-size: 18px;
+    padding-bottom: 100px;
+  }
+  #container {
+    margin: 80px 0;
+  }
+  #container .container-title {
+    padding: 0 20px;
+  }
+  #container .container-title h4 {
+    font-size: 24px;
+  }
+  #container .container-title p {
+    font-size: 16px;
+  }
+  #container .about .description-wrap {
+    padding: 93px 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  #container .about .description-wrap .about-title {
+    font-size: 24px;
+    color: #fff;
+  }
+  #container .about .description-wrap p:last-child {
+    padding: 0;
+    font-size: 16px;
+    color: #efefef;
+  }
+  #container .about .box-1, #container .about .box-3 {
+    min-height: 300px;
+    background: url("../img/about/salad.jpg") no-repeat center bottom;
+  }
+  #container .about .box-1 img, #container .about .box-3 img {
+    display: none;
+  }
+  #container .about .box-1 .about-title, #container .about .box-3 .about-title {
+    float: none;
+  }
+  #container .about .box-2 {
+    margin-top: 20px;
+    min-height: 300px;
+    background: url("../img/about/rock.jpg") no-repeat center;
+    background-size: cover;
+  }
+  #container .about .box-2 img {
+    display: none;
+  }
+  #container .about .box-3 {
+    margin-top: 20px;
+    background: url("../img/about/bubble.jpg") no-repeat center;
+    background-size: cover;
+  }
+  #container .mission p {
+    font-size: 28px;
+    width: 90%;
+  }
+  #container .core-value div {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #container .core-value div.value-box-2 {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
