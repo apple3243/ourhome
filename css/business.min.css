@@ -71,10 +71,10 @@
   border-right: 1px solid #acacac;
   display: block;
   height: 40px;
-  width: 130px;
+  width: 110px;
   padding-right: 31px;
   position: relative;
-  z-index: 10;
+  z-index: 2;
 }
 
 #nav .nav-wrap .parent-menu:after {
@@ -103,7 +103,7 @@
   display: block;
   font-size: 14px;
   border-right: 1px solid #acacac;
-  width: 130px;
+  width: 128px;
   border-left: 1px solid #acacac;
   padding-left: 7px;
   text-align: left;
@@ -136,7 +136,7 @@
   padding-right: 20px;
   display: block;
   position: relative;
-  z-index: 10;
+  z-index: 2;
 }
 
 #nav .nav-wrap .current-menu:after {
@@ -280,8 +280,11 @@
 
 #container .container-row-2 {
   overflow: hidden;
-  width: 770px;
+  max-width: 770px;
   margin: 0 auto 80px;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #container .container-row-2 p:nth-of-type(2) {
@@ -301,6 +304,7 @@
   background: url("../img/business/business_condition_1.jpg") center center;
   background-size: cover;
   border-radius: 69px;
+  display: block;
 }
 
 #container .container-row-2 > div:nth-of-type(2) {
@@ -363,8 +367,9 @@
   color: #333;
 }
 
-#container .container-row-3 > div ~ div {
+#container .container-row-3 > div:nth-of-type(2) {
   border-left: 1px solid #ef7c00;
+  border-right: 1px solid #ef7c00;
 }
 
 #container .container-row-4 {
@@ -535,14 +540,14 @@
 }
 
 #container .container-row-5 > a {
-  width: 360px;
+  width: 100%;
   height: 53px;
   line-height: 53px;
   background-color: #ef7c00;
   color: #fff;
   font-size: 20px;
   text-align: center;
-  margin: 0 100px 0;
+  margin: 0 auto;
   border: none;
   font-weight: 700;
   display: inline-block;
@@ -584,6 +589,141 @@
     font-size: 18px;
     padding-bottom: 100px;
   }
+  #container .container-title .img-text {
+    max-width: 80%;
+  }
+  #container .container-title .img-text .main-title {
+    font-size: 22px;
+  }
+  #container .container-title .img-text p:last-child {
+    font-size: 16px;
+  }
+  #container .container-row-1 {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #container .container-row-1 > div .img-box {
+    width: 150px;
+    height: 150px;
+  }
+  #container .container-row-1 > div ~ div {
+    margin-left: 32.58373%;
+  }
+  #container .container-row-1 > div p.img-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  #container .container-row-1 > div p {
+    width: 151px;
+    font-size: 17px;
+  }
+  #container .container-row-2 > div {
+    width: 130px;
+    height: 130px;
+  }
+  #container .container-row-2 > div ~ div {
+    margin-left: 15px;
+  }
+  #container .container-row-4 > div {
+    width: 50%;
+    height: 100px;
+    background: none;
+    text-align: left;
+    overflow: hidden;
+    padding: 0 10px;
+  }
+  #container .container-row-4 > div:nth-of-type(2) {
+    background: none;
+  }
+  #container .container-row-4 > div:nth-of-type(2) .img-wrap {
+    background: #fff url("../img/business/img-fs2-txt2.png") no-repeat center center;
+    background-size: 80% auto;
+  }
+  #container .container-row-4 > div:nth-of-type(3) {
+    background: none;
+  }
+  #container .container-row-4 > div:nth-of-type(3) .img-wrap {
+    background: #fff url("../img/business/img-fs2-txt3.png") no-repeat center center;
+    background-size: 80% auto;
+  }
+  #container .container-row-4 > div:nth-of-type(4) {
+    background: none;
+  }
+  #container .container-row-4 > div:nth-of-type(4) .img-wrap {
+    background: #fff url("../img/business/img-fs2-txt4.png") no-repeat center center;
+    background-size: 80% auto;
+  }
+  #container .container-row-4 > div ~ div {
+    margin-left: 0px;
+  }
+  #container .container-row-4 > div .box-dim {
+    display: none;
+  }
+  #container .container-row-4 > div .img-wrap {
+    float: left;
+    width: 120px;
+    background: #fff url("../img/business/img-fs2-txt1.png") no-repeat center center;
+    background-size: 80% auto;
+    border-radius: none;
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0%;
+  }
+  #container .container-row-4 > div > p {
+    width: 100%;
+    position: relative;
+    top: 41px;
+    color: #000;
+    padding: 0 3px;
+    font-size: 14px;
+  }
+  #container .container-row-5 {
+    padding: 0 10px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #container .container-row-5 > div {
+    width: 18%;
+    overflow: hidden;
+  }
+  #container .container-row-5 > div ~ div {
+    margin-left: 15px;
+    padding-left: 20px;
+  }
+  #container .container-row-5 > div ~ div .img-box:before {
+    left: -41px;
+    margin-left: 10px;
+  }
+  #container .container-row-5 > div .img-box {
+    width: 110px;
+    height: 110px;
+    border: none;
+    background: url("../img/business/img-fs5-1.png") no-repeat center center;
+    background-size: 50% auto;
+    display: inline-block;
+  }
+  #container .container-row-5 > div:nth-of-type(2) .img-box {
+    background: url("../img/business/img-fs5-2.png") no-repeat center center;
+    background-size: 44% auto;
+  }
+  #container .container-row-5 > div:nth-of-type(3) .img-box {
+    background: url("../img/business/img-fs5-3.png") no-repeat center center;
+    background-size: 60% auto;
+  }
+  #container .container-row-5 > div:nth-of-type(4) .img-box {
+    background: url("../img/business/img-fs5-4.png") no-repeat center center;
+    background-size: 50% auto;
+  }
+  #container .container-row-5 > div:nth-of-type(5) .img-box {
+    background: url("../img/business/img-fs5-5.png") no-repeat center center;
+    background-size: 50% auto;
+  }
+  #container .container-row-5 > div p {
+    margin: 10px 0 70px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -603,12 +743,220 @@
     margin: 80px 0;
   }
   #container .container-title {
+    background: none;
+  }
+  #container .container-title .img-text {
+    max-width: 90%;
+    padding-top: 0;
+  }
+  #container .container-title .img-text .main-title {
+    font-size: 22px;
+  }
+  #container .container-title .img-text p:last-child {
+    font-size: 15px;
+  }
+  #container .container-row-1 {
+    margin: 0;
+  }
+  #container .container-row-1 > div {
+    float: none;
+    padding: 0 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+  #container .container-row-1 > div ~ div {
+    margin-left: auto;
+  }
+  #container .container-row-1 > div .img-box {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+  }
+  #container .container-row-1 > div p.img-title {
+    font-size: 20px;
+    display: inline;
+  }
+  #container .container-row-1 > div p {
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+  }
+  #container .container-row-2 .container-tit-1 {
+    font-size: 22px;
+  }
+  #container .container-row-2 p:nth-of-type(2) {
+    font-size: 18px;
     padding: 0 20px;
   }
-  #container .container-title h4 {
-    font-size: 24px;
+  #container .container-row-2 > div {
+    float: none;
+    width: 100%;
+    height: 50px;
+    background: none;
+    border-radius: 15px;
+    line-height: 50px;
   }
-  #container .container-title p {
-    font-size: 16px;
+  #container .container-row-2 > div:nth-of-type(2), #container .container-row-2 > div:nth-of-type(3), #container .container-row-2 > div:nth-of-type(4), #container .container-row-2 > div:nth-of-type(5) {
+    background: none;
+  }
+  #container .container-row-2 > div p {
+    padding: 0;
+    background-color: rgba(239, 124, 0, 0.8);
+  }
+  #container .container-row-2 > div ~ div {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  #container .container-tit-1 {
+    font-size: 22px;
+  }
+  #container .container-row-3 > div {
+    float: none;
+    padding: 0 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #container .container-row-3 > div:nth-of-type(2) {
+    border: none;
+  }
+  #container .container-row-3 > div p:nth-of-type(2) {
+    margin-bottom: 10px;
+  }
+  #container .container-row-4 > div {
+    width: 100%;
+    height: 100px;
+    float: none;
+    background: none;
+    text-align: left;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  #container .container-row-4 > div:nth-of-type(2) {
+    background: none;
+  }
+  #container .container-row-4 > div:nth-of-type(2) .img-wrap {
+    background: #fff url("../img/business/img-fs2-txt2.png") no-repeat center center;
+    background-size: 80% auto;
+  }
+  #container .container-row-4 > div:nth-of-type(3) {
+    background: none;
+  }
+  #container .container-row-4 > div:nth-of-type(3) .img-wrap {
+    background: #fff url("../img/business/img-fs2-txt3.png") no-repeat center center;
+    background-size: 80% auto;
+  }
+  #container .container-row-4 > div:nth-of-type(4) {
+    background: none;
+  }
+  #container .container-row-4 > div:nth-of-type(4) .img-wrap {
+    background: #fff url("../img/business/img-fs2-txt4.png") no-repeat center center;
+    background-size: 80% auto;
+  }
+  #container .container-row-4 > div ~ div {
+    margin-left: 0px;
+  }
+  #container .container-row-4 > div .box-dim {
+    display: none;
+  }
+  #container .container-row-4 > div .img-wrap {
+    float: left;
+    width: 120px;
+    background: #fff url("../img/business/img-fs2-txt1.png") no-repeat center center;
+    background-size: 80% auto;
+    border-radius: none;
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0%;
+  }
+  #container .container-row-4 > div > p {
+    width: 100%;
+    position: relative;
+    top: 29px;
+    color: #000;
+    padding: 0 3px;
+    font-size: 14px;
+  }
+  #container .container-row-5 {
+    padding: 0 20px;
+  }
+  #container .container-row-5 > p:nth-of-type(2) {
+    font-size: 18px;
+  }
+  #container .container-row-5 > div {
+    float: none;
+    width: 90%;
+    overflow: hidden;
+    display: table;
+  }
+  #container .container-row-5 > div ~ div {
+    padding-left: 0;
+    margin-left: 0;
+    padding-top: 20px;
+  }
+  #container .container-row-5 > div ~ div .img-box {
+    padding-top: 10px;
+  }
+  #container .container-row-5 > div ~ div .img-box:before {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+    top: -30px;
+    left: 81px;
+  }
+  #container .container-row-5 > div .img-box {
+    width: 90px;
+    height: 90px;
+    float: none;
+    margin-right: 10px;
+    border: none;
+    background: url("../img/business/img-fs5-1.png") no-repeat center center;
+    background-size: 50% auto;
+    display: inline-block;
+  }
+  #container .container-row-5 > div:nth-of-type(2) .img-box {
+    background: url("../img/business/img-fs5-2.png") no-repeat center center;
+    background-size: 44% auto;
+  }
+  #container .container-row-5 > div:nth-of-type(3) .img-box {
+    background: url("../img/business/img-fs5-3.png") no-repeat center center;
+    background-size: 60% auto;
+  }
+  #container .container-row-5 > div:nth-of-type(3) .img-box:before {
+    left: 71px;
+  }
+  #container .container-row-5 > div:nth-of-type(4) .img-box {
+    background: url("../img/business/img-fs5-4.png") no-repeat center center;
+    background-size: 50% auto;
+  }
+  #container .container-row-5 > div:nth-of-type(4) .img-box:before {
+    left: 75px;
+  }
+  #container .container-row-5 > div:nth-of-type(4) p {
+    top: -37px;
+  }
+  #container .container-row-5 > div:nth-of-type(5) .img-box {
+    background: url("../img/business/img-fs5-5.png") no-repeat center center;
+    background-size: 45% auto;
+    margin-right: 2px;
+    margin-left: 6px;
+  }
+  #container .container-row-5 > div:nth-of-type(5) .img-box:before {
+    left: 78px;
+  }
+  #container .container-row-5 > div:nth-of-type(5) p {
+    top: -37px;
+  }
+  #container .container-row-5 > div p {
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    top: -28px;
+  }
+  #container .container-row-5 > a {
+    margin-top: 50px;
   }
 }
