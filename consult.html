@@ -6,14 +6,307 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>아워홈 | 온라인상담</title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/common.js"></script>
     <link rel="shortcut icon" href="img/common/ourhome.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/consult.min.css">
 </head>
 
 <body>
-
+    <header id="header">
+        <div class="header-inner-wrap">
+            <h1 class="logo"><a href="index.html"><img src="img/common/img-logo.png" alt="아워홈 메인"></a></h1>
+            <div class="all-menu">
+                <span></span>
+            </div>
+            <div class="mb-gnb">
+                <ul>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">아워홈식품점<br>Mall</a></li>
+                </ul>
+            </div>
+            <div id="gnb" class="gnb">
+                <ul>
+                    <li class="gnb-list-1"><a href="#">About 아워홈</a>
+                        <ul>
+                            <li><a href="about.html">아워홈소개</a></li>
+                            <li><a href="#">CEO인사말</a></li>
+                            <li><a href="#">미션ㆍ핵심가치</a></li>
+                            <li><a href="#">히스토리</a></li>
+                            <li><a href="#">나눔과 상생</a></li>
+                            <li><a href="#">윤리경영</a></li>
+                            <li><a href="#">재무정보</a></li>
+                            <li><a href="#">CI 소개</a></li>
+                            <li><a href="location.html">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-2"><a href="#">Business</a>
+                        <ul>
+                            <li><a href="business.html">Cooking Meal사업</a></li>
+                            <li><a href="#">식품사업</a></li>
+                            <li><a href="#">Restaurant사업</a></li>
+                            <li><a href="#">Fresh Foodstuff사업</a></li>
+                            <li><a href="#">해외사업</a></li>
+                            <li><a href="#">인프라</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-3"><a href="#">NewsRoom</a>
+                        <ul>
+                            <li><a href="news.html">아워홈 소식</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">TV & Viral Film</a></li>
+                            <li><a href="#">아워홈 전시관</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-4"><a href="#">CustomerCenter</a>
+                        <ul>
+                            <li><a href="#">고객의 소리</a></li>
+                            <li><a href="consult.html">온라인 상담</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-5"><a href="#">인재채용</a>
+                    </li>
+                    <li class="gnb-list-6"><a href="#">로그인</a>
+                        <ul>
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">회원서비스</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-7"><a href="#"><img src="img/common/img-logo-right.png" alt="아워홈 식품점Mall"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="util-menu">
+                <select name="language" id="language">
+                    <option value="default">LANGUAGE</option>
+                    <option value="KOREAN">KOR</option>
+                    <option value="ENGLISH">ENG</option>
+                    <option value="CHINESE">CHN</option>
+                </select>
+            </div>
+            <div class="btn-close">
+                <span>닫기</span>
+            </div>
+        </div>
+    </header>
+    <div class="bg-banner">
+        <h2 class="bg-tit-1">고객센터</h2>
+        <h3 class="bg-tit-2">궁금하신 점이 있다면 여기서 먼저 찾아보세요</h3>
+    </div>
+    <div id="nav">
+        <div class="nav-wrap">
+            <div class="home-icon"><a href="index.html"><img src="img/common/icon-navi-home.png" alt="홈으로가기"></a>
+            </div>
+            <div class="parent-menu">
+                <a href="#">Customer Center</a>
+                <ul class="parent-nav">
+                    <li><a href="about.html">About 아워홈</a></li>
+                    <li><a href="business.html">Business</a></li>
+                    <li><a href="#">News Room</a></li>
+                    <li><a href="consult.html">Customer Center</a></li>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">아워홈 식품점 Mall</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">회원서비스</a></li>
+                </ul>
+            </div>
+            <div class="current-menu">
+                <a href="#">온라인 상담</a>
+                <ul class="current-nav">
+                    <li><a href="#">고객의 소리</a></li>
+                    <li><a href="consult.html">온라인 상담</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div class="container-title">
+            <h4 class="main-title">온라인 상담</h4>
+            <p>사업과 관련된 문의에 성실하게 답변드립니다.</p>
+        </div>
+        <div class="first-form">
+            <p class="fill">표시는 필수 입력 항목입니다.</p>
+            <div class="form-title">개인정보 수집 및 이용 안내</div>
+            <table>
+                <caption>동의항목</caption>
+                <tr>
+                    <th>수집 항목</th>
+                    <td class="fill">[필수] 성명, 연락처, 이메일주소, 회사명</td>
+                </tr>
+                <tr>
+                    <th>수집 및 이용 목적</th>
+                    <td>서비스 이용에 따른 본인인증(실명)확인, 고객 문의에 대한 상담 내용 접수 및 상담결과의 회신</td>
+                </tr>
+                <tr>
+                    <th>보유 및 이용기간</th>
+                    <td>회원정보만을 추출하여 별도로 축적하지는 않으며, 고객불만사항 내용과 함께 3년 동안 보존됩니다.</td>
+                </tr>
+            </table>
+            <p class="fill">아워홈에 상담해 주셔서 감사합니다. 신속하고 정확한 처리를 위해 정확한 고객정보를 기입하여 주시기 바랍니다.</p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>동의 선택</legend>
+                    <input type="radio" name="input-agree" id="input-agree">
+                    <label for="input-agree">동의합니다</label>
+                    <input type="radio" name="input-agree" id="input-disagree">
+                    <label for="input-disagree">동의하지 않습니다</label>
+                </fieldset>
+            </form>
+        </div>
+        <div class="second-form">
+            <div class="form-title">기본 정보 입력</div>
+            <table>
+                <caption>기본 정보 입력</caption>
+                <tr>
+                    <th class="fill-2">성명</th>
+                    <td>
+                        <input type="text" name="input-name" id="input-name">
+                    </td>
+                </tr>
+                <tr>
+                    <th class="fill-2">회사명</th>
+                    <td>
+                        <input type="text" name="input-company" id="input-company">
+                    </td>
+                </tr>
+                <tr>
+                    <th class="fill-2">연락처</th>
+                    <td>
+                        <label for="phone-number">
+                            <select name="phone-number" id="phone-number">
+                                <option value="선택">선택</option>
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="016">016</option>
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                                <option value="019">019</option>
+                            </select>
+                        </label>
+                        <span>-</span>
+                        <input type="text" name="phone-number-1" id="phone-number-1">
+                        <span>-</span>
+                        <input type="text" name="phone-number-1" id="phone-number-2">
+                    </td>
+                </tr>
+                <tr>
+                    <th class="fill-2">이메일</th>
+                    <td><input type="text" name="input-email-1" id="input-email-1" disabled>
+                        <span>@</span>
+                        <label for="input-email-2">
+                            <select name="input-email-2" id="input-email-2">
+                                <option value="선택">선택</option>
+                                <option value="hanmail.net">hanmail.net</option>
+                                <option value="daum.net">daum.net</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="nate.com">nate.com</option>
+                                <option value="hotmail.com">hotmail.com</option>
+                                <option value="yahoo.co.kr">yahoo.co.kr</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="paran.co.kr">paran.co.kr</option>
+                                <option value="직접입력">직접입력</option>
+                            </select>
+                        </label>
+                        <p>입력하신 이메일로 답변드리니 정확히 입력해주시기 바랍니다. hotmail, daum, hanmail 은 답변 메일이 수신되지 않을 수 있습니다.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="third-form">
+            <div class="form-title">상세 항목 입력</div>
+            <table>
+                <caption>상세 항목 입력</caption>
+                <tr>
+                    <th>상담구분</th>
+                    <td>
+                        <label for="input-select">
+                            <select name="input-select" id="input-select">
+                                <option value="전체">전체</option>
+                                <option value="위탁급식문의">위탁급식문의</option>
+                                <option value="납품문의">납품문의</option>
+                                <option value="식품사업문의">식품사업문의</option>
+                                <option value="외식사업문의">외식사업문의</option>
+                            </select>
+                        </label>
+                        <input type="button" value="식재거래1:1상담">
+                    </td>
+                </tr>
+                <tr>
+                    <th class="fill-2">제목</th>
+                    <td>
+                        <input type="text" name="input-title" id="input-title">
+                    </td>
+                </tr>
+                <tr>
+                    <th class="fill-2">내용</th>
+                    <td>
+                        <div class="context-area">
+                            <div class="text-area">
+                                <textarea name="content" id="content" cols="30" rows="10"
+                                    placeholder="내용은 총 2,000자 이내 까지 입력 가능합니다."></textarea>
+                            </div>
+                            <div class="txt-bottom">
+                                <span>0</span>
+                                <em>/2,000자</em>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>파일첨부</th>
+                    <td>
+                        <p>- PDF, JPG, GMP, GIF 파일만 업로드 가능합니다.</p>
+                        <p>- 파일첨부는 필수 항목이 아닙니다.</p>
+                        <input type="file" name="input-file" id="input-file">
+                        <button class="file">파일첨부</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <a href="#">등록하기</a>
+        <div class="btn-top"><a href="#"><span></span></a></div>
+    </div>
+    <div class="section s5 fp-auto-height">
+        <footer id="footer">
+            <div class="upper-footer">
+                <div class="upper-left-footer">
+                    <ul class="link-footer">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="location.html">오시는 길</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                </div>
+                <div class="upper-right-footer">
+                    <ul class="icon-box">
+                        <li><a href="#"><img src="img/common/icon-blog1.png" alt="아워홈블로그"></a></li>
+                        <li><a href="#"><img src="img/common/icon-fb1.png" alt="아워홈페이스북"></a></li>
+                        <li><a href="#"><img src="img/common/icon-yt1.png" alt="아워홈유튜브"></a></li>
+                    </ul>
+                    <select name="family-site" id="family-site">
+                        <option value="FAMILY SITE">FAMILY SITE</option>
+                        <option value="아워홈 식품점 Mall">아워홈 식품점 Mall</option>
+                        <option value="아워홈 호스피탈리티">아워홈 호스피탈리티</option>
+                        <option value="아모리스">아모리스</option>
+                        <option value="지수원">지수원</option>
+                        <option value="웰프라자">웰프라자</option>
+                        <option value="아워홈 TFS">아워홈 TFS</option>
+                        <option value="공급사포털">공급사포털</option>
+                    </select>
+                    <button class="go">GO</button>
+                </div>
+            </div>
+            <div class="below-footer">
+                <p>서울특별시 강서구 마곡중앙10로 91 아워홈 마곡식품연구센터(우편번호: 07792) 고객센터 080-234-7575</p>
+                <p>copyright ⓒ 2019 OURHOME. all rights reserved.</p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
