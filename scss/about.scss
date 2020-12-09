@@ -43,7 +43,9 @@
                         padding-left: 7px;
                         text-align: left;
                         height: 40px;
+                        color: $fontColor-1;
                         background-color: #fff;
+                        &:hover{color: $mainColor-2;}
                     }
                     &:last-child{
                         >a{
@@ -85,6 +87,8 @@
                         height: 40px;
                         background-color: #fff;
                         border-left: 1px solid #acacac;
+                        color:$fontColor-1;
+                        &:hover{color: $mainColor-2;}
                     }
                     &:last-child{
                         a{

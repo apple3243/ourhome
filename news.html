@@ -6,14 +6,333 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>아워홈 | 아워홈 소식</title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/news.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="shortcut icon" href="img/common/ourhome.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/news.min.css">
 </head>
 
 <body>
-
+    <header id="header">
+        <div class="header-inner-wrap">
+            <h1 class="logo"><a href="index.html"><img src="img/common/img-logo.png" alt="아워홈 메인"></a></h1>
+            <div class="all-menu">
+                <span></span>
+            </div>
+            <div class="mb-gnb">
+                <ul>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">아워홈식품점<br>Mall</a></li>
+                </ul>
+            </div>
+            <div id="gnb" class="gnb">
+                <ul>
+                    <li class="gnb-list-1"><a href="#">About 아워홈</a>
+                        <ul>
+                            <li><a href="about.html">아워홈소개</a></li>
+                            <li><a href="#">CEO인사말</a></li>
+                            <li><a href="#">미션ㆍ핵심가치</a></li>
+                            <li><a href="#">히스토리</a></li>
+                            <li><a href="#">나눔과 상생</a></li>
+                            <li><a href="#">윤리경영</a></li>
+                            <li><a href="#">재무정보</a></li>
+                            <li><a href="#">CI 소개</a></li>
+                            <li><a href="location.html">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-2"><a href="#">Business</a>
+                        <ul>
+                            <li><a href="business.html">Cooking Meal사업</a></li>
+                            <li><a href="#">식품사업</a></li>
+                            <li><a href="#">Restaurant사업</a></li>
+                            <li><a href="#">Fresh Foodstuff사업</a></li>
+                            <li><a href="#">해외사업</a></li>
+                            <li><a href="#">인프라</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-3"><a href="#">NewsRoom</a>
+                        <ul>
+                            <li><a href="news.html">아워홈 소식</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">TV & Viral Film</a></li>
+                            <li><a href="#">아워홈 전시관</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-4"><a href="#">CustomerCenter</a>
+                        <ul>
+                            <li><a href="#">고객의 소리</a></li>
+                            <li><a href="consult.html">온라인 상담</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-5"><a href="#">인재채용</a>
+                    </li>
+                    <li class="gnb-list-6"><a href="#">로그인</a>
+                        <ul>
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">회원서비스</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-7"><a href="#"><img src="img/common/img-logo-right.png" alt="아워홈 식품점Mall"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="util-menu">
+                <select name="language" id="language">
+                    <option value="default">LANGUAGE</option>
+                    <option value="KOREAN">KOR</option>
+                    <option value="ENGLISH">ENG</option>
+                    <option value="CHINESE">CHN</option>
+                </select>
+            </div>
+            <div class="btn-close">
+                <span>닫기</span>
+            </div>
+        </div>
+    </header>
+    <div class="bg-banner">
+        <h2 class="bg-tit-1">아워홈 뉴스룸</h2>
+        <h3 class="bg-tit-2">새로운 라이프 스타일, 아워홈과 함께라면 가능합니다</h3>
+    </div>
+    <div id="nav">
+        <div class="nav-wrap">
+            <div class="home-icon"><a href="index.html"><img src="img/common/icon-navi-home.png" alt="홈으로가기"></a>
+            </div>
+            <div class="parent-menu">
+                <a href="#">News Room</a>
+                <ul class="parent-nav">
+                    <li><a href="about.html">About 아워홈</a></li>
+                    <li><a href="business.html">Business</a></li>
+                    <li><a href="news.html">News Room</a></li>
+                    <li><a href="consult.html">Customer Center</a></li>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">아워홈 식품점 Mall</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">회원서비스</a></li>
+                </ul>
+            </div>
+            <div class="current-menu">
+                <a href="#">아워홈 소식</a>
+                <ul class="current-nav">
+                    <li><a href="news.html">아워홈소식</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">TV & Viral Film</a></li>
+                    <li><a href="#">아워홈 전시관</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div class="container-title">
+            <h4 class="main-title">뉴스</h4>
+            <p>아워홈의 최신 기사를 확인해보세요</p>
+        </div>
+        <div class="main-news">
+            <div class="title"><a href="#">아워홈 식품점몰, ‘Fresh 산지직송’ 서비스 론칭</a></div>
+            <div class="sub-title">
+                <p>
+                    - 아워홈 식품점몰에서 22일까지, 전문MD가 직접 선별한 제철 우수 농·수산품 당일 발송
+                </p>
+                <p>
+                    - ‘신선함’에 초점…주문 즉시 제주, 완도 등 청정산지에서 식탁까지 직송
+                </p>
+            </div>
+            <div class="content">
+                ‘Fresh 산지직송’ 서비스는 장기화된 사회적 거리두기로 인해 제철 식재료 산지 방문 구매가 어려운 소비자를 위해 마련됐으며, ‘신선집중’이라는 콘셉트 아래 식재료의 신선도에 초점을 맞췄다. Fresh 산지직송에서 판매하는 모든 제철 식재료는 아워홈 구매 전문가들이 제주, 완도 등 청정 산지를 직접 찾아 엄선했으며, 산지에서 직배송한다.
+            </div>
+            <div class="date">2020.12.07</div>
+        </div>
+        <div class="slider owl-carousel">
+            <div class="card">
+                <div class="img">
+                    <img src="img/news/news-1.png" alt="">
+                    <div class="date">
+                        <em>07</em>
+                        <strong>DEC</strong>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">아워홈, BWP강남호텔 ‘루프탑 가든 웨딩’ 인기</div>   
+                    <p>- 아워홈 식품점몰에서 22일까지, 전문MD가 직접 선별한 제철 우수 농·수산품 당일 발송</p>
+                    <div class="btn">
+                        <button>더보기</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/news/news-2.png" alt="">
+                    <div class="date">
+                        <em>02</em>
+                        <strong>DEC</strong>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">아워홈, ‘온더고(on the go)’ 구매 인증 이벤트 진행</div>   
+                    <p>- 12월 16일까지 온더고 구매 후 가장 감각적인 사진을 촬영하여 응모하는 미션…푸짐한 경품 증정</p>
+                    <div class="btn">
+                        <button>더보기</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/news/news-3.png" alt="">
+                    <div class="date">
+                        <em>27</em>
+                        <strong>NOV</strong>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">아워홈, 간편한 김장을 위한 ‘김장 김치 기획전’ 열어</div>   
+                    <p>- 본격적인 김장 시즌 맞아 12월 11일까지 ‘김장 김치 기획전’ 실시…날짜 지정 무료 배송 서비스</p>
+                    <div class="btn">
+                        <button>더보기</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/news/news-4.png" alt="">
+                    <div class="date">
+                        <em>25</em>
+                        <strong>NOV</strong>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">아워홈, 해외여행 테마 ‘플라이 투 메뉴(FLY TO MENU)’ 선봬</div>   
+                    <p>- 첫번째 국가로 ‘미국’ 선정, ‘잠발라야’, ‘잠발라야 스파게티’, ‘뉴욕 핫도그’, ‘하와이안 무스비’ 등 구성</p>
+                    <div class="btn">
+                        <button>더보기</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/news/news-5.png" alt="">
+                    <div class="date">
+                        <em>03</em>
+                        <strong>NOV</strong>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">아워홈, BWP강남호텔 ‘루프탑 가든 웨딩’ 인기</div>   
+                    <p>- 아워홈 운영 ‘베스트웨스턴 프리미어 강남호텔’, 강남권 유일 ‘루프탑 야외 웨딩’ 가능 호텔로 인기</p>
+                    <div class="btn">
+                        <button>더보기</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/news/news-6.png" alt="">
+                    <div class="date">
+                        <em>27</em>
+                        <strong>OCT</strong>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">아워홈, 전국 800여 개 점포에 친환경 포장재 도입</div>   
+                    <p>- 19일부터 전국 800여 개 점포 일괄 적용…친환경 포장재 사용으로 ‘착한 소비’ 동참</p>
+                    <div class="btn">
+                        <button>더보기</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/news/news-7.png" alt="">
+                    <div class="date">
+                        <em>07</em>
+                        <strong>OCT</strong>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">아워홈 식품점몰, 포스트 추석 프로모션 진행…최대 55% ↓</div>   
+                    <p>- 10월 31일까지 아워홈 식품점몰에서 체중 조절을 위한 가벼운 한 끼 기획전 진행</p>
+                    <div class="btn">
+                        <button>더보기</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="img/news/news-8.png" alt="">
+                    <div class="date">
+                        <em>21</em>
+                        <strong>SEP</strong>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">아워홈 푸드엠파이어, 골목식당 신메뉴 4종 출시</div>   
+                    <p>- ‘골목식당’을 콘셉트로, 강릉, 원주, 군산 등 전국 각지 먹자 골목의 인기 메뉴를 한 자리에 선봬</p>
+                    <div class="btn">
+                        <button>더보기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-top"><a href="#"><span></span></a></div>
+    </div>
+    <div class="section s5 fp-auto-height">
+        <footer id="footer">
+            <div class="upper-footer">
+                <div class="upper-left-footer">
+                    <ul class="link-footer">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="location.html">오시는 길</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                </div>
+                <div class="upper-right-footer">
+                    <ul class="icon-box">
+                        <li><a href="#"><img src="img/common/icon-blog1.png" alt="아워홈블로그"></a></li>
+                        <li><a href="#"><img src="img/common/icon-fb1.png" alt="아워홈페이스북"></a></li>
+                        <li><a href="#"><img src="img/common/icon-yt1.png" alt="아워홈유튜브"></a></li>
+                    </ul>
+                    <select name="family-site" id="family-site">
+                        <option value="FAMILY SITE">FAMILY SITE</option>
+                        <option value="아워홈 식품점 Mall">아워홈 식품점 Mall</option>
+                        <option value="아워홈 호스피탈리티">아워홈 호스피탈리티</option>
+                        <option value="아모리스">아모리스</option>
+                        <option value="지수원">지수원</option>
+                        <option value="웰프라자">웰프라자</option>
+                        <option value="아워홈 TFS">아워홈 TFS</option>
+                        <option value="공급사포털">공급사포털</option>
+                    </select>
+                    <button class="go">GO</button>
+                </div>
+            </div>
+            <div class="below-footer">
+                <p>서울특별시 강서구 마곡중앙10로 91 아워홈 마곡식품연구센터(우편번호: 07792) 고객센터 080-234-7575</p>
+                <p>copyright ⓒ 2019 OURHOME. all rights reserved.</p>
+            </div>
+        </footer>
+    </div>
 </body>
+    <script>
+        $(".slider").owlCarousel({
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 4000, //2000ms = 2s;
+          autoplayHoverPause: true,
+          responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            721:{
+                items:3
+            }
+          }
+        });
+      </script>
 
 </html>

@@ -87,13 +87,14 @@ function allMenuFnc(el) {
 function navMenuFnc(e) {
     var navMenu1 = e.find('.parent-menu>a')
     var navMenu2 = e.find('.current-menu>a')
-    navMenu1.on('click', function () {
+    navMenu1.on('click', function (e) {
+        e.preventDefault();
         $(this).toggleClass('on')
     })
-    navMenu2.on('click', function () {
+    navMenu2.on('click', function (e) {
+        e.preventDefault();
         $(this).toggleClass('on')
     })
-    e.preventDefault();
 }
 $(document).ready(function () {
     $(window).scroll(function () {

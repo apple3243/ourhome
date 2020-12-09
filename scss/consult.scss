@@ -67,12 +67,14 @@ html,body{overflow-x: hidden;}
                         display: block;
                         font-size: 14px;
                         border-right: 1px solid #acacac;
-                        width: 186px;
+                        width: 166px;
                         border-left:1px solid #acacac;
                         padding-left: 7px;
                         text-align: left;
                         height: 40px;
+                        color: $fontColor-1;
                         background-color: #fff;
+                        &:hover{color: $mainColor-2;}
                     }
                     &:last-child{
                         a{
@@ -107,13 +109,15 @@ html,body{overflow-x: hidden;}
                         line-height: 40px;
                         font-size: 14px;
                         display: block;
-                        width: 123px;
+                        width: 122px;
                         border-right: 1px solid #acacac;
                         text-align: left;
                         padding-left: 7px;
+                        color: $fontColor-1;
                         height: 40px;
                         background-color: #fff;
                         border-left: 1px solid #acacac;
+                        &:hover{color: $mainColor-2;}
                     }
                     &:last-child{
                         a{
@@ -256,7 +260,7 @@ html,body{overflow-x: hidden;}
                     }
                 }
                 select{
-                    height: 35px;width: 172px;font-size: 18px;color: $fontColor-1;padding: 0 10px;position: relative;border-radius:0;vertical-align:middle;appearance: none;
+                    height: 35px;width: 172px;font-size: 16px;color: $fontColor-1;padding: 0 10px;position: relative;border-radius:0;vertical-align:middle;appearance: none;
                 }
             }
         }
@@ -293,8 +297,8 @@ html,body{overflow-x: hidden;}
                         border-left: 6px solid transparent;
                     }
                 }
-                input[type="text"]{height: 35px;width: 613px;border: 1px solid #696969;}
-                select{height: 35px;appearance: none;width: 140px;font-size: 18px;color: $fontColor-1;padding: 0 10px;vertical-align: middle;border: 1px solid #696969;font-weight: 300;}
+                input[type="text"]{height: 35px;width: 613px;border: 1px solid #696969;padding: 0 10px;}
+                select{height: 35px;appearance: none;width: 140px;font-size: 16px;color: $fontColor-1;padding: 0 10px;vertical-align: middle;border: 1px solid #696969;font-weight: 300;}
             }
             tr{
                 &:nth-child(3){ 
@@ -332,7 +336,7 @@ html,body{overflow-x: hidden;}
                     }
                     td{
                         position: relative;vertical-align:top;
-                        input[type="file"]{width: 200px;height: 35px;background-color: #ccc;color: $fontColor-1;opacity: 0;}
+                        input[type="file"]{width: 200px;height: 35px;background-color: #ccc;color: $fontColor-1;opacity: 0;z-index: 4;position: relative;top: 10px;}
                         button{
                             width: 200px;
                             height: 35px;
@@ -396,7 +400,7 @@ html,body{overflow-x: hidden;}
         font-size: 32px;padding-top: 100px;margin-bottom: 30px;
     }
     .bg-tit-2{
-        font-size: 18px;padding-bottom: 100px;
+        font-size: 18px;padding: 0 20px 100px;
     }
     #container{
         margin: 80px 20px;
@@ -457,7 +461,7 @@ html,body{overflow-x: hidden;}
                     font-size: 15px;
                     display: inline-block;
                     input{width: 30%;}
-                    select{font-size: 15px;width: 88px;}
+                    select{font-size: 15px;width: 87px;}
                 }
                 tr{
                     &:nth-child(1){
@@ -480,10 +484,10 @@ html,body{overflow-x: hidden;}
                     &:nth-child(4){
                         td{
                             input{
-                                width:50%
+                                width:30%
                             }
                             select{
-                                width: 42%;
+                                width: 28%;font-size: 15px;
                             }
                             p{font-size: 14px;}
                         }
@@ -516,7 +520,7 @@ html,body{overflow-x: hidden;}
                 tr{
                     &:nth-child(2){
                         td{
-                            input{width: 100%;}
+                            input{width: 100%;padding: 0 10px;}
                         }
                     }
                     &:nth-child(3){
@@ -535,11 +539,17 @@ html,body{overflow-x: hidden;}
                         }
                         p{font-size: 14px;}
                         td{
+                            input[type="file"]{
+                                position: absolute;
+                                left: 29%;
+                                z-index: 3;
+                                top: 68px;
+                            }
                             button{
                                 position: relative;
                                 left: 0;
                                 margin-top: 0;
-                                margin:0 auto;
+                                margin:10px auto;
                                 display: block;
                             }
                         }
