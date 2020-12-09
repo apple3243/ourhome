@@ -439,6 +439,10 @@ html, body {
   border-left: 6px solid transparent;
 }
 
+#container .second-form table td label.input-email-2-label-1:after {
+  content: none;
+}
+
 #container .second-form table td select {
   height: 35px;
   width: 172px;

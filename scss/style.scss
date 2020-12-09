@@ -3,7 +3,7 @@
 @import "design";
 @import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
 html.ovh, html.ovh body{overflow-y: hidden;height: 100vh;}
-body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif};
+body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif;};
 .tit-1{
     font-size: 27px;
     color: #000;
@@ -171,7 +171,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
         display: none;
     }
 }
-.mb-gnb{right: -9999px;position: absolute;transition: right .2s ease;}
+.mb-gnb{display:none;position: absolute;}
 .btn-close{display: none;}
 .section.s0{
     overflow-x: hidden;
@@ -564,7 +564,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
     html{min-width: 360px;}
     #gnb{
         position: fixed;
-        right: -9999px;
+        display: none;
         z-index: 1;
         width: 100%;
         background-color: #f4f4f4;
@@ -644,7 +644,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
         }
         &.on{
             +.mb-gnb{
-                right: 0;
+                display: block;
                 z-index: 2;
                 position: fixed;
                 height: 200px;
@@ -673,7 +673,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif}
                     }
                 }
                 +#gnb{
-                    right: 0;overflow-y: auto;
+                    display: block;overflow-y: auto;transition:all .5s ease;
                     +.util-menu{
                         display: block;z-index: 2;position: fixed;right: 20px;top: 5px;
                         +.btn-close{

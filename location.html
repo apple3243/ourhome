@@ -6,14 +6,327 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>아워홈 | 아워홈 오시는 길</title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/common.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ea4131af8c47a8431f82520d569abe43"></script>
     <link rel="shortcut icon" href="img/common/ourhome.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/location.min.css">
 </head>
 
 <body>
+    <header id="header">
+        <div class="header-inner-wrap">
+            <h1 class="logo"><a href="index.html"><img src="img/common/img-logo.png" alt="아워홈 메인"></a></h1>
+            <div class="all-menu">
+                <span></span>
+            </div>
+            <div class="mb-gnb">
+                <ul>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">아워홈식품점<br>Mall</a></li>
+                </ul>
+            </div>
+            <div id="gnb" class="gnb">
+                <ul>
+                    <li class="gnb-list-1"><a href="#">About 아워홈</a>
+                        <ul>
+                            <li><a href="about.html">아워홈소개</a></li>
+                            <li><a href="#">CEO인사말</a></li>
+                            <li><a href="#">미션ㆍ핵심가치</a></li>
+                            <li><a href="#">히스토리</a></li>
+                            <li><a href="#">나눔과 상생</a></li>
+                            <li><a href="#">윤리경영</a></li>
+                            <li><a href="#">재무정보</a></li>
+                            <li><a href="#">CI 소개</a></li>
+                            <li><a href="location.html">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-2"><a href="#">Business</a>
+                        <ul>
+                            <li><a href="business.html">Cooking Meal사업</a></li>
+                            <li><a href="#">식품사업</a></li>
+                            <li><a href="#">Restaurant사업</a></li>
+                            <li><a href="#">Fresh Foodstuff사업</a></li>
+                            <li><a href="#">해외사업</a></li>
+                            <li><a href="#">인프라</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-3"><a href="#">NewsRoom</a>
+                        <ul>
+                            <li><a href="news.html">아워홈 소식</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">TV & Viral Film</a></li>
+                            <li><a href="#">아워홈 전시관</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-4"><a href="#">CustomerCenter</a>
+                        <ul>
+                            <li><a href="#">고객의 소리</a></li>
+                            <li><a href="consult.html">온라인 상담</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-5"><a href="#">인재채용</a>
+                    </li>
+                    <li class="gnb-list-6"><a href="#">로그인</a>
+                        <ul>
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">회원서비스</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-list-7"><a href="#"><img src="img/common/img-logo-right.png" alt="아워홈 식품점Mall"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="util-menu">
+                <select name="language" id="language">
+                    <option value="default">LANGUAGE</option>
+                    <option value="KOREAN">KOR</option>
+                    <option value="ENGLISH">ENG</option>
+                    <option value="CHINESE">CHN</option>
+                </select>
+            </div>
+            <div class="btn-close">
+                <span>닫기</span>
+            </div>
+        </div>
+    </header>
+    <div class="bg-banner">
+        <h2 class="bg-tit-1">About 아워홈</h2>
+        <h3 class="bg-tit-2">대한민국 식문화를 이끌어가는<br>
+            종합식품기업, 아워홈을 소개합니다</h3>
+    </div>
+    <div id="nav">
+        <div class="nav-wrap">
+            <div class="home-icon"><a href="index.html"><img src="img/common/icon-navi-home.png" alt="홈으로가기"></a>
+            </div>
+            <div class="parent-menu">
+                <a href="#">About 아워홈</a>
+                <ul class="parent-nav">
+                    <li><a href="about.html">About 아워홈</a></li>
+                    <li><a href="business.html">Business</a></li>
+                    <li><a href="news.html">News Room</a></li>
+                    <li><a href="consult.html">Customer Center</a></li>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">아워홈 식품점 Mall</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">회원서비스</a></li>
+                </ul>
+            </div>
+            <div class="current-menu">
+                <a href="#">오시는 길</a>
+                <ul class="current-nav">
+                    <li><a href="about.html">아워홈 소개</a></li>
+                    <li><a href="#">CEO인사말</a></li>
+                    <li><a href="#">미션ㆍ핵심가치</a></li>
+                    <li><a href="#">히스토리</a></li>
+                    <li><a href="#">나눔과 상생</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                    <li><a href="#">재무정보</a></li>
+                    <li><a href="#">CI 소개</a></li>
+                    <li><a href="location.html">오시는 길</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div class="container-title">
+            <h4 class="container-tit-1">오시는길</h4>
+        </div>
+        <div class="row-1">
+            <div class="row-tit">아워홈 본사</div>
+            <div class="address">
+                <strong>주소</strong>
+                <em>서울특별시 강서구 마곡중앙10로 91 아워홈 마곡식품연구센터(우편번호: 07792)</em>
+            </div>
+            <div class="number">
+                <strong>대표번호</strong>
+                <em>080-234-7575</em>
+            </div>
+            <div id="map" style="width:1024px;height:400px;"></div>
+        </div>
+        <div class="row-2">
+            <div class="row-tit">아워홈 빌딩</div>
+            <div class="address">
+                <strong>주소</strong>
+                <em>서울특별시 강남구 역삼로 115 아워홈빌딩 (우편번호 : 06243)</em>
+            </div>
+            <div class="number">
+                <strong>대표번호</strong>
+                <em>080-234-7575</em>
+            </div>
+            <div id="map2" style="width:1024px;height:400px;"></div>
+        </div>
+        <div class="row-3">
+            <div class="row-tit">마곡식품연구센터</div>
+            <div class="address">
+                <strong>주소</strong>
+                <em>서울특별시 강서구 마곡중앙10로 91 아워홈 마곡식품연구센터(우편번호: 07792)</em>
+            </div>
+            <div class="number">
+                <strong>대표번호</strong>
+                <em>080-234-7575</em>
+            </div>
+        </div>
+        <div class="row-4">
+            <div class="row-tit">Cooking Meal사업부(푸드서비스 급식 개발)</div>
+            <div class="address">
+                <strong>주소</strong>
+                <em>서울특별시 강서구 마곡중앙10로 91 아워홈 마곡식품연구센터(우편번호: 07792)</em>
+            </div>
+            <div class="number">
+                <strong>대표번호</strong>
+                <em>080-234-7575 내선1번</em>
+            </div>
+        </div>
+        <div class="row-5">
+            <div class="row-tit">Fresh Foodstuff사업부(식재 유통)</div>
+            <table>
+                <caption>Fresh Foodstuff사업부(식재 유통) 전화번호 및 주소</caption>
+                <tr>
+                    <th>수도권영업팀</th>
+                    <td>서울특별시 강남구 역삼로 115 아워홈빌딩</td>
+                    <td>080-234-7575 내선 2번</td>
+                </tr>
+                <tr>
+                    <th>중부영업팀</th>
+                    <td>충청북도 청주시 서원구 남아면 남이외천길 53-2</td>
+                    <td>043-718-5031</td>
+                </tr>
+                <tr>
+                    <th>경북영업팀</th>
+                    <td>경상북도 구미시 장천면 장군로 339-4</td>
+                    <td>054-479-1530</td>
+                </tr>
+                <tr>
+                    <th>경남영업팀</th>
+                    <td>경상남도 양산시 어곡공단1길 134</td>
+                    <td>055-380-9892</td>
+                </tr>
+                <tr>
+                    <th>호남영업팀</th>
+                    <td>광주광역시 북구 양산로 192</td>
+                    <td>062-720-0900</td>
+                </tr>
+                <tr>
+                    <th>강원영업팀</th>
+                    <td>강원도 원주시 시청로 21 501호</td>
+                    <td>033-813-2043</td>
+                </tr>
+                <tr>
+                    <th>학교영업팀</th>
+                    <td>서울특별시 강남구 역삼로 115 아워홈빌딩</td>
+                    <td>02-6966-9814</td>
+                </tr>
+                <tr>
+                    <th>외식영업팀</th>
+                    <td>서울특별시 강남구 역삼로 115 아워홈빌딩</td>
+                    <td>02-6966-9825</td>
+                </tr>
+            </table>
+            <div class="number">
+                <strong>대표번호</strong>
+                <em>1544-9943</em>
+            </div>
+        </div>
+        <div class="row-6">
+            <div class="row-tit">식품사업부(식품 유통)</div>
+            <div class="address">
+                <strong>주소</strong>
+                <em>서울특별시 강남구 역삼로 115 아워홈빌딩 (우편번호 : 06243)</em>
+            </div>
+            <div class="number">
+                <strong>대표번호</strong>
+                <em>080-234-7575 내선 3번</em>
+            </div>
+        </div>
+        <div class="row-7">
+            <div class="row-tit">Restaurant사업부(컨세션 개발)</div>
+            <div class="address">
+                <strong>주소</strong>
+                <em>서울특별시 강서구 마곡중앙10로 91 아워홈 마곡식품연구센터(우편번호: 07792)</em>
+            </div>
+            <div class="number">
+                <strong>대표번호</strong>
+                <em>080-234-7575 내선 4번</em>
+            </div>
+        </div>
+        <button class="hospitality">호스피탈리티 지점 안내</button>
+        <div class="btn-top"><a href="#header"><span></span></a></div>
+    </div>
 
+    <div class="section s5 fp-auto-height">
+        <footer id="footer">
+            <div class="upper-footer">
+                <div class="upper-left-footer">
+                    <ul class="link-footer">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="location.html">오시는 길</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                </div>
+                <div class="upper-right-footer">
+                    <ul class="icon-box">
+                        <li><a href="#"><img src="img/common/icon-blog1.png" alt="아워홈블로그"></a></li>
+                        <li><a href="#"><img src="img/common/icon-fb1.png" alt="아워홈페이스북"></a></li>
+                        <li><a href="#"><img src="img/common/icon-yt1.png" alt="아워홈유튜브"></a></li>
+                    </ul>
+                    <select name="family-site" id="family-site">
+                        <option value="FAMILY SITE">FAMILY SITE</option>
+                        <option value="아워홈 식품점 Mall">아워홈 식품점 Mall</option>
+                        <option value="아워홈 호스피탈리티">아워홈 호스피탈리티</option>
+                        <option value="아모리스">아모리스</option>
+                        <option value="지수원">지수원</option>
+                        <option value="웰프라자">웰프라자</option>
+                        <option value="아워홈 TFS">아워홈 TFS</option>
+                        <option value="공급사포털">공급사포털</option>
+                    </select>
+                    <button class="go">GO</button>
+                </div>
+            </div>
+            <div class="below-footer">
+                <p>서울특별시 강서구 마곡중앙10로 91 아워홈 마곡식품연구센터(우편번호: 07792) 고객센터 080-234-7575</p>
+                <p>copyright ⓒ 2019 OURHOME. all rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        var container1 = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options1 = { //지도를 생성할 때 필요한 기본 옵션
+	    center: new kakao.maps.LatLng(37.56411926831264, 126.83795079226078), //지도의 중심좌표.
+	    level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+		var map = new kakao.maps.Map(container1, options1); //지도 생성 및 객체 리턴
+		var markerPosition1  = new kakao.maps.LatLng(37.56411926831264, 126.83795079226078); // 마커가 표시될 위치입니다 
+		// 마커를 생성합니다
+        var marker1 = new kakao.maps.Marker({
+            position: markerPosition1
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker1.setMap(map);
+		// 아워홈 본사
+
+
+        var container2 = document.getElementById('map2'); //지도를 담을 영역의 DOM 레퍼런스
+        var options2 = { //지도를 생성할 때 필요한 기본 옵션
+	    center: new kakao.maps.LatLng(37.49400042833044, 127.03192718806461), //지도의 중심좌표.
+	    level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+		var map2 = new kakao.maps.Map(container2, options2); //지도 생성 및 객체 리턴
+		var markerPosition2  = new kakao.maps.LatLng(37.49400042833044, 127.03192718806461); // 마커가 표시될 위치입니다 
+		// 마커를 생성합니다
+        var marker2 = new kakao.maps.Marker({
+            position: markerPosition2
+        });
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker2.setMap(map2);
+		//아워홈 빌딩
+    </script>
 </body>
 
 </html>

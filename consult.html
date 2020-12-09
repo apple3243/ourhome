@@ -198,20 +198,21 @@
                     <th class="fill-2">이메일</th>
                     <td><input type="text" name="input-email-1" id="input-email-1" disabled required>
                         <span>@</span>
-                        <label for="input-email-2">
-                            <input type="text" name="str_email02" id="str_email02" style="width:94px;" disabled value="naver.com" readonly required>
-                            <select name="input-email-2" id="input-email-2" onchange="myFunction()">
-                                <option value="1">선택</option>
-                                <option value="hanmail.net">hanmail.net</option>
-                                <option value="daum.net">daum.net</option>
-                                <option value="naver.com">naver.com</option>
-                                <option value="nate.com">nate.com</option>
-                                <option value="hotmail.com">hotmail.com</option>
-                                <option value="yahoo.co.kr">yahoo.co.kr</option>
-                                <option value="gmail.com">gmail.com</option>
-                                <option value="paran.co.kr">paran.co.kr</option>
-                                <option value="2">직접입력</option>
-                            </select>
+                        <input type="text" name="str_email02" id="str_email02" style="width:94px;" disabled value="naver.com" readonly required>
+                        <label for="str_email02" class="input-email-2-label-1"></label>
+                        <label for="input-email-2"  class="input-email-2-label-2">
+                        <select name="input-email-2" id="input-email-2" onchange="myFunction()">
+                            <option value="1">선택</option>
+                            <option value="hanmail.net">hanmail.net</option>
+                            <option value="daum.net">daum.net</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="nate.com">nate.com</option>
+                            <option value="hotmail.com">hotmail.com</option>
+                            <option value="yahoo.co.kr">yahoo.co.kr</option>
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="paran.co.kr">paran.co.kr</option>
+                            <option value="2">직접입력</option>
+                        </select>
                         </label>
                         <p>입력하신 이메일로 답변드리니 정확히 입력해주시기 바랍니다. hotmail, daum, hanmail 은 답변 메일이 수신되지 않을 수 있습니다.</p>
                     </td>

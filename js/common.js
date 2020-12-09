@@ -45,7 +45,6 @@ function gnbFnc(el) {
             }
         })
     }
-
 }
 function deviceSizeChkFnc() {
     $(window).on('resize', function () {
@@ -68,13 +67,12 @@ function deviceSizeChkFnc() {
 }
 function allMenuFnc(el) {
     el.on('click', function (e) {
+        $(this).toggleClass('on')
         if ($('html').hasClass('tablet')) {
             $('.all-menu').addClass('on')
             $('#header').css('padding', '0')
             $('#header .header-inner-wrap').css('padding', '0')
-        } else {
-            $(this).toggleClass('on')
-        }
+        } 
         e.preventDefault();
     });
     $('.btn-close').on('click', function (e) {

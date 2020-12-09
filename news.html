@@ -316,9 +316,9 @@
             </div>
         </footer>
     </div>
-</body>
     <script>
-        $(".slider").owlCarousel({
+        $(window).on('load',function(){
+            $(".slider").owlCarousel({
           loop: true,
           autoplay: true,
           autoplayTimeout: 4000, //2000ms = 2s;
@@ -326,13 +326,17 @@
           responsive:{
             0:{
                 items:1,
-                nav:false
+                nav:false,
+                responsiveClass: true,
             },
             721:{
                 items:3
             }
           }
         });
+        })
+        
       </script>
+</body>
 
 </html>

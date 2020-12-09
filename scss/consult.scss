@@ -258,6 +258,9 @@ html,body{overflow-x: hidden;}
                         border-right: 6px solid transparent;
                         border-left: 6px solid transparent;
                     }
+                    &.input-email-2-label-1{
+                        &:after{content: none;}
+                    }
                 }
                 select{
                     height: 35px;width: 172px;font-size: 16px;color: $fontColor-1;padding: 0 10px;position: relative;border-radius:0;vertical-align:middle;appearance: none;
