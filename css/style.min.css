@@ -1,16 +1,11 @@
 @charset "UTF-8";
-@import url("http://applecloud.dothome.co.kr/HTML/style/CSS/reset.css");
+@import url("../css/reset.css");
 /* (연한글씨) */
 /* (진한글씨) */
 /* (링크) */
 /* (강조) */
 /* (input) */
 @import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
-html.ovh, html.ovh body {
-  overflow-y: hidden;
-  height: 100vh;
-}
-
 body {
   font: 14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif;
 }
@@ -671,9 +666,10 @@ body {
 }
 
 .section.s4 .news-box-2 .inner-box-2-right img {
-  width: 250px;
+  width: 100%;
   display: block;
   margin: 0 auto;
+  height: 163px;
 }
 
 .section.s4 .news-box-2 .inner-box-2-right .go {
@@ -1173,6 +1169,10 @@ body {
     float: none;
     width: 100%;
   }
+  .section.s4 .news-box-2 .inner-box-2-right img {
+    width: 80%;
+    height: 222px;
+  }
   .section.s4 .news-box-3 {
     min-height: 518px;
     margin-left: 20px;
@@ -1195,14 +1195,15 @@ body {
   .section.s4 .btn-top {
     position: absolute;
     right: 20px;
-    bottom: 50px;
+    bottom: 200px;
     width: 30px;
     height: 30px;
     background-color: #4b4b4b;
     border-radius: 50px;
+    z-index: 2;
   }
   .section.s4 .btn-top span {
-    position: relative;
+    position: absolute;
     left: 34%;
     top: 42%;
     display: block;
@@ -1253,6 +1254,9 @@ body {
 }
 
 @media (max-width: 720px) {
+  #map, #map2 {
+    margin: 0 20px;
+  }
   .section.s1 img {
     width: 200px;
     height: 200px;
@@ -1299,6 +1303,11 @@ body {
   .section.s4 .news-box-2 {
     float: none;
     width: 100%;
+  }
+  .section.s4 .news-box-2 .inner-box-2-right img {
+    width: 80%;
+    height: auto;
+    max-height: 250px;
   }
   .section.s4 .news-box-3 {
     min-height: 518px;

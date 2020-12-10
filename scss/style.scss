@@ -1,8 +1,7 @@
 @charset "utf-8";
-@import url("http://applecloud.dothome.co.kr/HTML/style/CSS/reset.css");
+@import url("../css/reset.css");
 @import "design";
 @import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
-html.ovh, html.ovh body{overflow-y: hidden;height: 100vh;}
 body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif;};
 .tit-1{
     font-size: 27px;
@@ -446,7 +445,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif;
             float: right;
             width: 35%;
             position: relative;
-            img{width: 250px;display: block;margin: 0 auto;}
+            img{width: 100%;display: block;margin: 0 auto;height: 163px;}
             .go{display: block;width: 10px;height: 10px;border-right: 1px solid $fontColor-1 ;border-top: 1px solid $fontColor-1;transform: rotate(45deg);top: 7px;right: 0;position: absolute;}
         }
     }
@@ -492,9 +491,7 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif;
         }
     }
     .plus{position: absolute;right: 0;top: -11px;font-size: 29px;font-weight: 100;}
-    .btn-top{
-        display: none;
-    }
+    .btn-top{display: none;}
 }
 .section.s5{
     background-color: #121212;height: 165px;
@@ -718,7 +715,13 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif;
         .news-box-2{
             float: left;width: 48%;margin-top: 20px;
             .inner-box-2-left{float: none;width: 100%;margin-bottom: 10px;}
-            .inner-box-2-right{float: none;width: 100%;}
+            .inner-box-2-right{
+                float: none;width: 100%;
+                img{
+                    width: 80%;
+                    height: 222px;
+                }
+            }
         }
         .news-box-3{
             min-height: 518px;margin-left: 20px;margin-top: 20px;width: 49%;
@@ -731,13 +734,14 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif;
         .btn-top{
             position: absolute;
             right: 20px;
-            bottom:50px;
+            bottom:200px;
             width: 30px;
             height: 30px;
             background-color:#4b4b4b;
             border-radius:50px;
+            z-index: 2;
             span{
-                position: relative;left: 34%;top: 42%;display: block;height: 10px;width: 10px;border-top: 1px solid #fff;border-left: 1px solid #fff;transform: rotate(45deg);
+                position: absolute;left: 34%;top: 42%;display: block;height: 10px;width: 10px;border-top: 1px solid #fff;border-left: 1px solid #fff;transform: rotate(45deg);
             }
         } 
     } 
@@ -765,9 +769,13 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif;
 }
 //tablet
 @media(min-width:721px) and (max-width:1099px){
+
 }
 // Mobile
 @media(max-width:720px){
+    #map,#map2{
+        margin: 0 20px;
+    }
     .section.s1 img{
         width: 200px;
         height: 200px;
@@ -807,6 +815,9 @@ body{font:14px/1.5 Noto Sans KR, MalgunGothic, '맑은고딕', arial,sans-serif;
         }
         .news-box-2{
             float: none;width: 100%;
+            .inner-box-2-right{
+                img{width: 80%;height: auto;max-height: 250px;}
+            }
         }
         .news-box-3{
             min-height: 518px;margin-left: 20px;margin-top: 20px;width: 100%;

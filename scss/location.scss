@@ -150,12 +150,16 @@
     height: 30px;
     background-color:#4b4b4b;
     border-radius:50px;
+    z-index: 2;
     span{
         position: absolute;left: 34%;top: 42%;display: block;height: 10px;width: 10px;border-top: 1px solid #fff;border-left: 1px solid #fff;transform: rotate(45deg);
     }
 } 
 // tablet
 @media(min-width:721px) and (max-width:1099px){
+    #container{
+        margin: 80px 10px;
+    }
     .bg-banner{
         height: 350px;
     }
@@ -178,11 +182,48 @@
         font-size: 18px;padding-bottom: 100px;
     }
     #container{
-        margin: 80px 0;
+        margin: 80px 20px;
         .container-title{
             padding: 0 20px;
             h4{font-size: 24px;}
             p{font-size: 16px;}
+        }
+        .row-tit{
+            font-size: 20px;
+        }
+        strong{
+            width: 100%;font-size: 18px;
+        }
+        em{
+            font-size: 16px;width: 100%;
+        }
+        .address{margin-bottom: 10px;}
+        table{
+            tr{
+                th{
+                    width: 22%;
+                    padding: 5px;
+                    height: 40px;
+                    font-size: 14px;
+                }
+                td{
+                    font-size: 14px;
+                    padding: 5px;
+
+                }    
+            }
+        }
+        .hospitality{
+            width: 260px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 16px;
+            &:after{
+                height: 18px;
+                width: 20px;
+                top: 8px;
+                right: 33px;
+            }
         }
     } 
 }
