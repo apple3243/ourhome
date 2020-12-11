@@ -56,6 +56,10 @@ html, body {
   font-weight: 700;
   padding-top: 230px;
   margin-bottom: 40px;
+  -webkit-animation: fadeInDown;
+          animation: fadeInDown;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .bg-tit-2 {
@@ -63,6 +67,10 @@ html, body {
   font-size: 20px;
   text-align: center;
   padding-bottom: 240px;
+  -webkit-animation: fadeInDown;
+          animation: fadeInDown;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 #nav {
@@ -255,6 +263,10 @@ html, body {
   max-width: 960px;
   margin: 0 auto;
   display: block;
+  -webkit-animation: fadeInDown;
+          animation: fadeInDown;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 #container .container-title h4 {

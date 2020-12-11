@@ -10,6 +10,8 @@
     <script src="js/common.js"></script>
     <link rel="shortcut icon" href="img/common/ourhome.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/about.min.css">
 </head>
 
@@ -93,8 +95,8 @@
         </div>
     </header>
     <div class="bg-banner">
-        <h2 class="bg-tit-1">About 아워홈</h2>
-        <h3 class="bg-tit-2">대한민국 식문화를 이끌어가는<br>
+        <h2 class="bg-tit-1 animate__animated animate__bounce">About 아워홈</h2>
+        <h3 class="bg-tit-2 animate__animated animate__bounce">대한민국 식문화를 이끌어가는<br>
             종합식품기업, 아워홈을 소개합니다</h3>
     </div>
     <div id="nav">
@@ -131,41 +133,43 @@
         </div>
     </div>
     <div id="container">
-        <div class="container-title">
+        <div class="container-title animate__animated animate__bounce">
             <h4 class="container-tit-1">글로벌 종합식품기업 아워홈은<br>
                 건강한 맛과 따뜻한 믿음을 약속합니다.</h4>
             <p>변화와 혁신의 DNA로 소비자중심경영을 실천하며,<br> 건강, 즐거움, 편리를
                 창조하는 글로벌 생활문화기업으로 발전해 나가겠습니다.</p>
         </div>
         <div class="about">
-            <div class="box-1">
+            <div class="box-1" data-aos="fade-left" data-aos-offset="100">
                 <div class="description-wrap">
                     <p class="about-title">아워홈은 기본을 튼튼히 합니다.</p>
                     <p>우리의 음식을 맛보는 모든 사람에게 감동을 줄 수 있는 건강한 맛을 만들고,
                         안심할 수 있는 믿음을 선사하겠습니다.</p>
                 </div>
             </div>
-            <div class="box-2">
+            <div class="box-2" data-aos="fade-right" data-aos-offset="150">
                 <div class="description-wrap">
                     <p class="about-title">아워홈은 도전을 멈추지 않겠습니다.</p>
                     <p>드넓은 세계를 가슴에 품고 고객과 소통할 수 있는 기반을 마련하며,
                         중국, 베트남, 그리고 미주를 중심으로 사업을 확대하고 지속 가능한 성장동력을 확보할 것입니다.</p>
                 </div>
             </div>
-            <div class="box-3">
+            <div class="box-3" data-aos="fade-left" data-aos-offset="170">
                 <div class="description-wrap">
                     <p class="about-title">아워홈은 신뢰받는 기업이 되겠습니다.</p>
-                    <p>아워홈의 창업정신은 인간존중과 사회공헌입니다.
+                    <p>
                         고객의 목소리를 우선으로 가치 있는 제품을 만들어 최상의 서비스를 제공하며,
                         인재의 창의력이 꽃 피우고 각자의 역량을 마음껏 펼칠 수 있는 기업문화를 조성하겠습니다.</p>
                 </div>
             </div>
         </div>
-        <div class="mission">
-            <h4 class="small-title">MISSION</h4>
+        <div class="mission" data-aos="fade-up"
+        data-aos-offset="250">
+            <h4 class="small-title" >MISSION</h4>
             <p>아워홈은 맛있고 건강한 음식을 고객에게 제공하기 위해 언제나 최선을 추구한다.</p>
         </div>
-        <div class="core-value">
+        <div class="core-value" data-aos="fade-up"
+        data-aos-offset="250">
             <h4 class="small-title">CORE VALUES</h4>
             <div class="value-box-1">
                 <p>도전</p>
@@ -217,6 +221,14 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          once:true,
+          mirror:false,
+          easing: 'ease-in-out'
+      });
+    </script>
 </body>
 
 </html>

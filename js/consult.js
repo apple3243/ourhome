@@ -48,9 +48,8 @@ function submitFnc(){
     if(!$('#input-agree').is(':checked')){
         alert("개인정보 수집 및 이용 안내 동의를 확인해주세요.")
         return false;
-    }else if($("input[type=text]").val()==""){
+    }else if($("input[type=text]").val("")){
         alert("필수정보를 입력해주세요")
-        return false
     }else{
         alert("상담내용이 정상적으로 등록되었습니다.")
     }

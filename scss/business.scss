@@ -4,10 +4,12 @@
     height: 590px;background: url("../img/business/notepad-691250_1920.png") no-repeat 0 0;width: 100%;background-position: center;background-size: cover;
 }
 .bg-tit-1{
-    font-size: 62px;text-align: center;color: #fefefe;font-weight: 700;padding-top: 230px;margin-bottom: 40px;
+    font-size: 62px;text-align: center;color: #fefefe;font-weight: 700;padding-top: 230px;margin-bottom: 40px;animation: fadeInDown;
+    animation-duration: 2s;
 }
 .bg-tit-2{
-    color:#fefefe;font-size: 20px;text-align: center;padding-bottom: 240px;
+    color:#fefefe;font-size: 20px;text-align: center;padding-bottom: 240px;animation: fadeInDown;
+    animation-duration: 2s;
 }
 #nav{
     display: block;width: 100%;border-bottom: 1px solid #acacac;height: 40px;line-height:40px;
@@ -110,6 +112,8 @@
     margin: 50px auto 100px;max-width: 1024px;
     .container-title{
         position: relative;width: 100%;;margin:0 auto 65px;background:url("../img/business/cooking-meal.png") no-repeat top center;background-size: 100% auto;
+        animation: fadeInDown;
+        animation-duration: 2s;
         .img-text{
             max-width: 77%;position: relative;margin:0 auto;padding-top: 23%;text-align: center;
             p.main-title{
