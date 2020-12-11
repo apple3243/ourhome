@@ -79,6 +79,7 @@ function allMenuFnc(el) {
         $('#header').css('padding', '')
         $('#header .header-inner-wrap').css('padding', '')
         $('html').css('overflow-y','unset')
+        $('#gnb>ul>li>a').romoveClass('on')
     })
 }
 function navMenuFnc(e) {

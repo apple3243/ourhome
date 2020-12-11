@@ -1,11 +1,15 @@
 // 파일형식체크
 function showname () {
-    var name = document.getElementById('input-file'); 
-    var ext = name.files.item(0).type.split('/').pop().toLowerCase();
-    if($.inArray(ext, ['gif','jpg','pdf','gmp'])==-1){
+    var name2 = document.getElementById('input-file'); 
+    var ext = name2.files.item(0).type.split('/').pop().toLowerCase();
+    var ext2= $('#input-file').val().split('\\').pop();
+    if($.inArray(ext, ['gif','jpg','jpeg','pdf','gmp'])==-1){
         alert('파일 형식을 확인하세요.')
-        $("#input-file").val("");
+        $("#input-file").val('');
         return;
+    }else{
+        document.getElementById("file").innerHTML = 'file:'+ ext2
+        $('.file').css('font-weight','normal')
     }
   };
 //이메일형식 체크
