@@ -50,6 +50,7 @@ function submitFnc(){
         return false;
     }else if($("input[type=text]").val("")){
         alert("필수정보를 입력해주세요")
+        return false;
     }else{
         alert("상담내용이 정상적으로 등록되었습니다.")
     }
