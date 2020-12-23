@@ -166,7 +166,7 @@
                 <tr>
                     <th class="fill-2">성명</th>
                     <td>
-                        <input type="text" name="input-name" id="input-name"  required>
+                        <input type="text" name="input-name" id="input-name" required>
                     </td>
                 </tr>
                 <tr>
@@ -179,8 +179,8 @@
                     <th class="fill-2">연락처</th>
                     <td>
                         <label for="phone-number">
-                            <select name="phone-number" id="phone-number">
-                                <option value="선택">선택</option>
+                            <select name="phone-number" id="phone-number" required>
+                                <option value="">선택</option>
                                 <option value="010">010</option>
                                 <option value="011">011</option>
                                 <option value="016">016</option>
@@ -199,21 +199,22 @@
                     <th class="fill-2">이메일</th>
                     <td><input type="text" name="input-email-1" id="input-email-1" disabled required>
                         <span>@</span>
-                        <input type="text" name="str_email02" id="str_email02" style="width:94px;" disabled value="naver.com" readonly required>
+                        <input type="text" name="str_email02" id="str_email02" style="width:94px;" disabled
+                            value="naver.com" readonly required>
                         <label for="str_email02" class="input-email-2-label-1"></label>
-                        <label for="input-email-2"  class="input-email-2-label-2">
-                        <select name="input-email-2" id="input-email-2" onchange="myFunction()">
-                            <option value="1">선택</option>
-                            <option value="hanmail.net">hanmail.net</option>
-                            <option value="daum.net">daum.net</option>
-                            <option value="naver.com">naver.com</option>
-                            <option value="nate.com">nate.com</option>
-                            <option value="hotmail.com">hotmail.com</option>
-                            <option value="yahoo.co.kr">yahoo.co.kr</option>
-                            <option value="gmail.com">gmail.com</option>
-                            <option value="paran.co.kr">paran.co.kr</option>
-                            <option value="2">직접입력</option>
-                        </select>
+                        <label for="input-email-2" class="input-email-2-label-2">
+                            <select name="input-email-2" id="input-email-2" onchange="myFunction()">
+                                <option value="1">선택</option>
+                                <option value="hanmail.net">hanmail.net</option>
+                                <option value="daum.net">daum.net</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="nate.com">nate.com</option>
+                                <option value="hotmail.com">hotmail.com</option>
+                                <option value="yahoo.co.kr">yahoo.co.kr</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="paran.co.kr">paran.co.kr</option>
+                                <option value="2">직접입력</option>
+                            </select>
                         </label>
                         <p>입력하신 이메일로 답변드리니 정확히 입력해주시기 바랍니다. hotmail, daum, hanmail 은 답변 메일이 수신되지 않을 수 있습니다.</p>
                     </td>
@@ -229,7 +230,7 @@
                     <td>
                         <label for="input-select">
                             <select name="input-select" id="input-select">
-                                <option value="전체" >전체</option>
+                                <option value="전체">전체</option>
                                 <option value="위탁급식문의">위탁급식문의</option>
                                 <option value="납품문의">납품문의</option>
                                 <option value="식품사업문의">식품사업문의</option>
@@ -251,7 +252,7 @@
                         <div class="context-area">
                             <div class="text-area">
                                 <textarea name="content" id="content" cols="30" rows="10"
-                                    placeholder="내용은 총 2,000자 이내 까지 입력 가능합니다."></textarea>
+                                    placeholder="내용은 총 2,000자 이내 까지 입력 가능합니다." required></textarea>
                             </div>
                             <div class="txt-bottom">
                                 <span class="count">0</span>
@@ -265,13 +266,14 @@
                     <td>
                         <p>- PDF, JPG, GMP, GIF 파일만 업로드 가능합니다.</p>
                         <p>- 파일첨부는 필수 항목이 아닙니다.</p>
-                        <input type="file" name="input-file" id="input-file" accept=".pdf,.jpg,.gmp,.gif" onchange="showname()"/>
+                        <input type="file" name="input-file" id="input-file" accept=".pdf,.jpg,.gmp,.gif"
+                            onchange="showname()" />
                         <button class="file" id="file">파일첨부</button>
                     </td>
                 </tr>
             </table>
         </div>
-        <a href="#" onclick="submitFnc()">등록하기</a>
+        <a href="#" onclick="return submitFnc()">등록하기</a>
         <div class="btn-top"><a href="#"><span></span></a></div>
     </div>
     <div class="section s5 fp-auto-height">
@@ -288,9 +290,12 @@
                 </div>
                 <div class="upper-right-footer">
                     <ul class="icon-box">
-                        <li><a href="http://blog.naver.com/blogourhome" target="blank"><img src="img/common/icon-blog1.png" alt="아워홈블로그"></a></li>
-                        <li><a href="https://www.facebook.com/ourhome.sonsoo" target="blank"><img src="img/common/icon-fb1.png" alt="아워홈페이스북"></a></li>
-                        <li><a href="https://www.youtube.com/user/ourhomepr" target="blank"><img src="img/common/icon-yt1.png" alt="아워홈유튜브"></a></li>
+                        <li><a href="http://blog.naver.com/blogourhome" target="blank"><img
+                                    src="img/common/icon-blog1.png" alt="아워홈블로그"></a></li>
+                        <li><a href="https://www.facebook.com/ourhome.sonsoo" target="blank"><img
+                                    src="img/common/icon-fb1.png" alt="아워홈페이스북"></a></li>
+                        <li><a href="https://www.youtube.com/user/ourhomepr" target="blank"><img
+                                    src="img/common/icon-yt1.png" alt="아워홈유튜브"></a></li>
                     </ul>
                     <select name="family-site" id="family-site">
                         <option value="FAMILY SITE">FAMILY SITE</option>
